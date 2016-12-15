@@ -1,23 +1,75 @@
-<?php
+<?php 
 session_start();
 // Start a session
 define("IS_INCLUDED", true);// Defines the variable that controls direct
 require_once ('configuration.php');
+include_once("inc/twitteroauth.php");
+//For the database connectivity
+include_once("includes/functions.php");
 date_default_timezone_set("Africa/Lusaka");
 $loginmessage = '';
 
 if(isset($_GET['logout'])){
 	$_SESSION['member']=null;
+	unset($_SESSION['userdata']);
 	session_destroy();
 	$loginmessage = '<div class="alert alert-success">
 							<strong>Well done!</strong> You have successfully logged out...
 						</div>';
+	header("Location:index.php");
 }
 
 $userStatus = 0;
 
 if(isset($_POST['login'])){
 	include "login.php";
+}
+
+if(isset($_SESSION['status']) && $_SESSION['status'] == 'verified')
+{
+	//Retrive variables
+	$screen_name = $_SESSION['request_vars']['screen_name'];
+	$twitter_id			= $_SESSION['request_vars']['user_id'];
+	$oauth_token 		= $_SESSION['request_vars']['oauth_token'];
+	$oauth_token_secret = $_SESSION['request_vars']['oauth_token_secret'];
+
+	$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oauth_token_secret);
+
+	$selectuser="SELECT * FROM account WHERE oauth_uid ='$twitter_id'";
+	$selectuser2=mysqli_query($dbconn, $selectuser) or die("Could not query. " .mysqli_error($dbconn));
+	$selectuser3=mysqli_fetch_array($selectuser2);
+
+	$_SESSION['member'] = $selectuser3['account_id'];
+}
+
+//Facebook
+if(!$fbuser){
+	$fbuser = null;
+	$loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPermissions));
+	$output = '<a href="'.$loginUrl.'"><img src="images/fb_login.png"></a>';
+}else{
+	$user_profile = $facebook->api('/me?fields=id,first_name,last_name,email,gender,locale,picture');
+	$user = new Users();
+	$user_data = $user->checkUser('facebook',$user_profile['id'],$user_profile['first_name'],$user_profile['last_name'],$user_profile['email'],$user_profile['locale'],"","",$user_profile['picture']['data']['url']);
+	if(!empty($user_data)){
+		$output = '<h1>Facebook Profile Details </h1>';
+		$output .= '<img src="'.$user_data['avatar'].'">';
+		$output .= '<br/>Facebook ID : ' . $user_data['oauth_uid'];
+		$output .= '<br/>Name : ' . $user_data['first_name'].' '.$user_data['last_name'];
+		$output .= '<br/>Email : ' . $user_data['email'];
+		//$output .= '<br/>Gender : ' . $user_data['gender'];
+		//$output .= '<br/>Locale : ' . $user_data['locale'];
+		$output .= '<br/>You are login with : Facebook';
+		$output .= '<br/>Logout from <a href="logout.php?logout">Facebook</a>';
+			
+		$selectuser="SELECT * FROM account WHERE oauth_uid ='".$user_data['oauth_uid']."'";
+		$selectuser2=mysqli_query($dbconn, $selectuser) or die("Could not query. " .mysqli_error($dbconn));
+		$selectuser3=mysqli_fetch_array($selectuser2);
+			
+		$_SESSION['member'] = $selectuser3['account_id'];
+	}else{
+		$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
+	}
 }
 
 if(isset($_SESSION['member'])){
@@ -31,6 +83,8 @@ if(isset($_SESSION['member'])){
 	}
 
 }
+
+$loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPermissions));
 
 ?><!DOCTYPE html>
 <html lang="en"><head>
@@ -48,7 +102,7 @@ if(isset($_SESSION['member'])){
 
   <!-- Styles -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
-
+  
   <link rel="stylesheet" type="text/css" media="screen, projection" href="style.css" />
   <link rel="icon" type="image/gif" href="favicon.png" />
   <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
@@ -57,24 +111,24 @@ if(isset($_SESSION['member'])){
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="css/font.css" type="text/css" />
-  <link rel="stylesheet" href="css/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />  
     <link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css" />
 <link rel="stylesheet" href="js/slider/slider.css" type="text/css" />
 <link rel="stylesheet" href="js/chosen/chosen.css" type="text/css" />
-<link rel="stylesheet" href="js/datatables/datatables.css" type="text/css"/>
+<link rel="stylesheet" href="js/datatables/datatables.css" type="text/css"/> 
 
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <?php
+  
+  <?php 
   if(!isset($_GET['page']) && !isset($_SESSION['member'])){
   	echo '<link rel="stylesheet" href="css/main.css">';
   }
   ?>
 
   <script src="js/modernizr-2.7.1.js"></script>
-
-  <script src="js/jquery.min.js"></script>
+  
+  <script src="js/jquery.min.js"></script>  
 
 </head>
 
@@ -93,26 +147,26 @@ if(isset($_SESSION['member'])){
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about" class="scroll">About</a></li>
             <li><a href="?page=forum/index">Forum</a></li>
-            <li><a href="./events/">Events</a></li>
-            <li><a href="?page=jobs">Jobs</a></li>
-            <?php if(isset($_SESSION['member'])){
+            <li><a href="?page=events">Events</a></li>
+            <li><a href="?page=jobs">Jobs</a></li> 
+            <?php if(isset($_SESSION['member']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')){
             	$user=$_SESSION['member'];
-            	$getuser="SELECT * from account, client where account.account_id='$user' and account.account_id = client.account_id";
+            	$getuser="SELECT * from account where account_id='$user'";
             	$getuser2=mysqli_query($dbconn,$getuser) or die("Could not get user info");
             	$getuser3=mysqli_fetch_array($getuser2);
             	$username = $getuser3['username'];
             	$fullname = $getuser3['first_name'].' '.$getuser3['last_name'];
-            	$regDate = date('Y-m-d H:i:s', $getuser3['registration_date']);
-
+            	$regDate = $getuser3['created'];
+            	
             	$email = $getuser3['email'];
-
+            	
             	$oldDate = new DateTime($regDate);
-
+            	
             	$curDate = mktime(Date('H'),Date('i'),Date('s'),Date('m'),Date('d'),Date('Y'));
             	$curDate = new DateTime(date('Y-m-d H:i:s', $curDate));
-
+            	
             	$difference = $oldDate->diff($curDate);
-
+            	
             	$timePassed = $difference->y.' years, '.$difference->m.' months, '.$difference->d.' days';
             	?>
             	<li>
@@ -131,7 +185,7 @@ if(isset($_SESSION['member'])){
                 <b>SUPPORT PIN: &emsp;&emsp;</b><?php echo ""; ?></p>
 
                     <hr/>
-
+                    
 <a style="color: gray;" href="?page=dashboard&username=<?php echo $user; ?>">Dashboard</a><br/>
 <a style="color: gray;" href="?page=profile/personal_info">Profile</a><br/>
 <a style="color: gray;" href="?logout"><i class="fa fa-sign-out"></i> Logout</a><br/>
@@ -147,29 +201,23 @@ if(isset($_SESSION['member'])){
             	<li><a href="#modal-form" data-toggle="modal">Sign in</a></li>
             	<?php
             }
-
+            	
             	?>
-
+            
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
-
-
-    <div class="mouse-icon hidden-xs">
-				<div class="scroll"></div>
-			</div>
+    
 			<?php
 			if (isset($_SESSION['member']) && !isset($_GET['page'])):
-        		?>
-        		<?php
+
         			include "dashboard.php";
         			?>
 			<?php
         		elseif(!isset($_GET['page']) && !isset($_SESSION['member'])):
         			include "frontpage.php";
         		else:
-
         		echo $loginmessage;
         		?>
         		                <?php
@@ -180,13 +228,13 @@ if(isset($_SESSION['member'])){
         		            {
         		                $page = $_GET['page'];
         		                include"$page.php";
-
+        		                
         		            }else //looking at main index
         		            {
-
+        		                
         		            }
-        		            ?>
-
+        		            ?>  
+        		            
         		            <?php
         		endif;
         		?>
@@ -200,6 +248,8 @@ if(isset($_SESSION['member'])){
               <li><a href="https://twitter.com/CodeAgora" target="_blank"><i class="fa fa-twitter"></i></a></li>
               <li><a href="https://www.facebook.com/agoracodecomm" target="_blank"><i class="fa fa-facebook"></i></a></li>
             </ul>
+            <p><small><a href="?page=tos">Terms &amp; Conditions</a> | 
+            <a href="?page=privacy">Privacy Policy</a></small></p>
           </div>
 
           <div class="col-sm-4 text-right">
@@ -238,8 +288,8 @@ if(isset($_SESSION['member'])){
               <p>Sign in to meet your friends.</p>
               <form action='index.php' role="form" method="post">
                 <div class="form-group">
-                  <label>Username</label>
-                  <input type='text' name='username' class="form-control" placeholder="Enter username">
+                  <label>Email</label>
+                  <input type='email' name='email' class="form-control" placeholder="Enter email">
                 </div>
                 <div class="form-group">
                   <label>Password</label>
@@ -257,8 +307,8 @@ if(isset($_SESSION['member'])){
               <h4>Not a member?</h4>
               <p>You can create an account <a href="?page=member&signup" class="text-info">here</a></p>
               <p>OR</p>
-              <a href="#" class="btn btn-primary btn-block m-b-sm"><i class="fa fa-facebook pull-left"></i>Sign in with Facebook</a>
-              <a href="#" class="btn btn-info btn-block m-b-sm"><i class="fa fa-twitter pull-left"></i>Sign in with Twitter</a>
+              <a href="<?php echo $loginUrl; ?>" class="btn btn-primary btn-block m-b-sm"><i class="fa fa-facebook pull-left"></i>Sign in with Facebook</a>
+              <a href="process.php" class="btn btn-info btn-block m-b-sm"><i class="fa fa-twitter pull-left"></i>Sign in with Twitter</a>
               <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google-plus pull-left"></i>Sign in with Google+</a>
             </div>
           </div>
@@ -266,11 +316,11 @@ if(isset($_SESSION['member'])){
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div>
-
+  
   <!-- parsley -->
 <script src="js/parsley/parsley.min.js"></script>
 <script src="js/parsley/parsley.extend.js"></script>
-
+  
   <!-- datepicker -->
   <script src="js/datepicker/bootstrap-datepicker.js"></script>
   <!-- slider -->
@@ -290,15 +340,15 @@ if(isset($_SESSION['member'])){
   <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/demo.js"></script>
-
-
-  <script type="text/javascript">
+  
+  
+  <script type="text/javascript"> 
 $("input[type=password]").keyup(function(){
     var ucase = new RegExp("[A-Z]+");
 	var lcase = new RegExp("[a-z]+");
 	var num = new RegExp("[0-9]+");
 	var spchar = new RegExp("[@#$%]+");
-
+	
 	if($("#password1").val().length >= 8){
 		$("#8char").removeClass("fa-times");
 		$("#8char").addClass("fa-check");
@@ -308,7 +358,7 @@ $("input[type=password]").keyup(function(){
 		$("#8char").addClass("fa-times");
 		$("#8char").css("color","#FF0004");
 	}
-
+	
 	if(ucase.test($("#password1").val())){
 		$("#ucase").removeClass("fa-times");
 		$("#ucase").addClass("fa-check");
@@ -328,7 +378,7 @@ $("input[type=password]").keyup(function(){
 		$("#spchar").addClass("fa-times");
 		$("#spchar").css("color","#FF0004");
 	}
-
+	
 	if(lcase.test($("#password1").val())){
 		$("#lcase").removeClass("fa-times");
 		$("#lcase").addClass("fa-check");
@@ -338,7 +388,7 @@ $("input[type=password]").keyup(function(){
 		$("#lcase").addClass("fa-times");
 		$("#lcase").css("color","#FF0004");
 	}
-
+	
 	if(num.test($("#password1").val())){
 		$("#num").removeClass("fa-times");
 		$("#num").addClass("fa-check");
@@ -348,7 +398,7 @@ $("input[type=password]").keyup(function(){
 		$("#num").addClass("fa-times");
 		$("#num").css("color","#FF0004");
 	}
-
+	
 	if($("#password1").val() == $("#password2").val()){
 		$("#pwmatch").removeClass("fa-times");
 		$("#pwmatch").addClass("fa-check");
@@ -359,7 +409,7 @@ $("input[type=password]").keyup(function(){
 		$("#pwmatch").css("color","#FF0004");
 	}
 });
-</script>
+</script> 
 
 
     </body>
