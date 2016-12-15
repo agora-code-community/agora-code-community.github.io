@@ -1,14 +1,14 @@
 <?php
-define('CONSUMER_KEY', 'ENUKTqUw8HG05fj3yzK0I7xZG');
-define('CONSUMER_SECRET', 'c3iy9osbsruizoncjzSCAYxVIlUr8SmykVJZVNYlJikd9M7hPM');
-define('OAUTH_CALLBACK', 'http://kafwana/web/agora/process.php');
+define('CONSUMER_KEY', 'your-twitter-consumer-key');
+define('CONSUMER_SECRET', 'your-twitter-consumer-secret-key');
+define('OAUTH_CALLBACK', 'your-twitter-callback-url');
 
 //Facebook
 include_once("inc/facebook.php"); //include facebook SDK
 ######### Facebook API Configuration ##########
-$appId = '331968697159745'; //Facebook App ID
-$appSecret = '5a8e42a2680a8e52574f339532796108'; // Facebook App Secret
-$homeurl = 'http://localhost/web/agora/';  //return to home
+$appId = 'your-facebook-appid'; //Facebook App ID
+$appSecret = 'your-facebook-secret-key'; // Facebook App Secret
+$homeurl = 'your home url';  //return to home
 $fbPermissions = 'email';  //Required facebook permissions
 
 //Call Facebook API
