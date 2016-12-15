@@ -101,183 +101,54 @@ $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPe
 	<meta property="og:description" content="">
 
   <!-- Styles -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
-  
-  <link rel="stylesheet" type="text/css" media="screen, projection" href="style.css" />
+
   <link rel="icon" type="image/gif" href="favicon.png" />
-  <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
+  
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="css/animate.css" type="text/css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
+  
+  <?php 
+  if(!isset($_GET['page']) && !isset($_SESSION['member']) && !isset($_SESSION['status'])){
+  	?>
+  	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" href="css/main.css">
+  	<script src="js/modernizr-2.7.1.js"></script>
+  	<?php
+  }else{
+  	?>
+  	<link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
+  	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="css/font.css" type="text/css" />
   <link rel="stylesheet" href="css/app.css" type="text/css" />  
     <link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css" />
 <link rel="stylesheet" href="js/slider/slider.css" type="text/css" />
 <link rel="stylesheet" href="js/chosen/chosen.css" type="text/css" />
 <link rel="stylesheet" href="js/datatables/datatables.css" type="text/css"/> 
-
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-  <?php 
-  if(!isset($_GET['page']) && !isset($_SESSION['member'])){
-  	echo '<link rel="stylesheet" href="css/main.css">';
+  	<?php
   }
   ?>
 
-  <script src="js/modernizr-2.7.1.js"></script>
-  
   <script src="js/jquery.min.js"></script>  
 
 </head>
 
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="logo" href="./"><img src="img/_agora_logo_alt.png" alt="Logo"></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" class="scroll">About</a></li>
-            <li><a href="?page=forum/index">Forum</a></li>
-            <li><a href="?page=events">Events</a></li>
-            <li><a href="?page=jobs">Jobs</a></li> 
-            <?php if(isset($_SESSION['member']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')){
-            	$user=$_SESSION['member'];
-            	$getuser="SELECT * from account where account_id='$user'";
-            	$getuser2=mysqli_query($dbconn,$getuser) or die("Could not get user info");
-            	$getuser3=mysqli_fetch_array($getuser2);
-            	$username = $getuser3['username'];
-            	$fullname = $getuser3['first_name'].' '.$getuser3['last_name'];
-            	$regDate = $getuser3['created'];
-            	
-            	$email = $getuser3['email'];
-            	
-            	$oldDate = new DateTime($regDate);
-            	
-            	$curDate = mktime(Date('H'),Date('i'),Date('s'),Date('m'),Date('d'),Date('Y'));
-            	$curDate = new DateTime(date('Y-m-d H:i:s', $curDate));
-            	
-            	$difference = $oldDate->diff($curDate);
-            	
-            	$timePassed = $difference->y.' years, '.$difference->m.' months, '.$difference->d.' days';
-            	?>
-            	<li>
-            <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
-              <i class="icon-user"></i>
-              Hi <?php echo $username; ?> <b class="caret"></b>
-            </a>
-            <section class="dropdown-menu aside-xl animated fadeInUp">
-              <section class="panel bg-white">
-                <div class="panel-heading b-light bg-light">
-                  <strong><i class="icon-user"></i> Your Account</strong>
-                </div>
-                <div class="m-lg">
-                <p><b>CUSTOMER: &emsp;&emsp;</b><?php echo $fullname; ?><br/>
-                <b>USERNAME: &emsp;&emsp;</b><?php echo $username; ?><br/>
-                <b>SUPPORT PIN: &emsp;&emsp;</b><?php echo ""; ?></p>
-
-                    <hr/>
-                    
-<a style="color: gray;" href="?page=dashboard&username=<?php echo $user; ?>">Dashboard</a><br/>
-<a style="color: gray;" href="?page=profile/personal_info">Profile</a><br/>
-<a style="color: gray;" href="?logout"><i class="fa fa-sign-out"></i> Logout</a><br/>
-
-                </div>
-              </section>
-            </section>
-          </li>
-          <li><a href="?logout"><i class="fa fa-sign-out"></i> Logout</a></li>
-            	<?php
-			}else{
-            	?>
-            	<li><a href="#modal-form" data-toggle="modal">Sign in</a></li>
-            	<?php
-            }
-            	
-            	?>
-            
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
+<body class="">
+    <?php 
+  if (isset($_SESSION['member']) || isset($_GET['page']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')):
+		include "frontpage.php";
+  	
+  else:
+          include"landing.php";
+  endif;
+  ?>
     
-			<?php
-			if (isset($_SESSION['member']) && !isset($_GET['page'])):
-
-        			include "dashboard.php";
-        			?>
-			<?php
-        		elseif(!isset($_GET['page']) && !isset($_SESSION['member'])):
-        			include "frontpage.php";
-        		else:
-        		echo $loginmessage;
-        		?>
-        		                <?php
-        		                if(isset($_GET['subscribe'])){
-        		                	include "subscribe.php";
-        		                }
-        		            if(isset($_GET['page'])) //looking at a page
-        		            {
-        		                $page = $_GET['page'];
-        		                include"$page.php";
-        		                
-        		            }else //looking at main index
-        		            {
-        		                
-        		            }
-        		            ?>  
-        		            
-        		            <?php
-        		endif;
-        		?>
-    <footer>
-      <div class="container">
-
-        <div class="row">
-          <div class="col-sm-8 margin-20">
-            <ul class="list-inline social">
-              <li>Connect with us on</li>
-              <li><a href="https://twitter.com/CodeAgora" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.facebook.com/agoracodecomm" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            </ul>
-            <p><small><a href="?page=tos">Terms &amp; Conditions</a> | 
-            <a href="?page=privacy">Privacy Policy</a></small></p>
-          </div>
-
-          <div class="col-sm-4 text-right">
-            <p><small>Copyright &copy; <?php echo date('Y'); ?>. All rights reserved. <br>
-	            Created by <a href="http://agora.icifrost.me">The Agora Code Community</a></small></p>
-          </div>
-        </div>
-
-      </div>
-
-    </footer>
 
 
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <script src="js/jquery.min.js"></script>
-  <!-- Bootstrap -->
-  <script src="js/bootstrap.js"></script>
-  <!-- App -->
-  <script src="js/app.js"></script>
-  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+  
     <div class="modal fade" id="modal-form">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -317,7 +188,23 @@ $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPe
     </div><!-- /.modal-dialog -->
   </div>
   
-  <!-- parsley -->
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <?php 
+  if(!isset($_GET['page']) && !isset($_SESSION['member']) && !isset($_SESSION['status'])){
+  	?>
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+  	<?php
+  }else{
+  	?>
+  
+  <!-- App -->
+  <script src="js/app.js"></script>
+  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+  	<!-- parsley -->
 <script src="js/parsley/parsley.min.js"></script>
 <script src="js/parsley/parsley.extend.js"></script>
   
@@ -340,6 +227,11 @@ $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPe
   <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+  	<?php
+  }
+  ?>
+  
+  
   
   
   <script type="text/javascript"> 
