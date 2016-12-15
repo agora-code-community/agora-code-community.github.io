@@ -4,10 +4,10 @@ class Users {
 	
 	function __construct(){
 		//Database configuration
-		$dbServer = 'localhost'; //Define database server host
-		$dbUsername = 'root'; //Define database username
-		$dbPassword = '260586'; //Define database password
-		$dbName = 'agora'; //Define database name
+		$dbServer = 'your-db-server'; //Define database server host
+		$dbUsername = 'your-db-username'; //Define database username
+		$dbPassword = 'your-db-password'; //Define database password
+		$dbName = 'your-db-name'; //Define database name
 		
 		//Connect databse
 		$con = mysqli_connect($dbServer,$dbUsername,$dbPassword,$dbName);
