@@ -74,6 +74,22 @@ a:hover, a:focus {
   transition: all 0.35s ease-in-out;
 }
 
+b {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+b:hover, b:focus {
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
@@ -234,7 +250,7 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: #843284;
+    background: #F4F4ED;
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
@@ -248,14 +264,14 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-nav a {
-    color: #ffffff;
+    color: #934c93;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #ffffff;
-    opacity: 0.6;
+    background-color: #934c93;
 }
 
 .nav > li > a {
@@ -265,10 +281,11 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #4ec3cd;
+    border-color: #DCCFEC;
 }
 
-.navbar-inverse .navbar-toggle {
+.navbar-inverse .navbar-toggle >li > a, .navbar-nav a {
+    color: #ffffff;
     border-color: transparent;
 }
 
@@ -282,7 +299,7 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-  background: url(../img/header-bg.jpg) no-repeat center center;
+  background: url(../img/about.jpg) no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
@@ -370,7 +387,7 @@ header {
 
 
 #about {
-  background: url(../img/about.jpg) #231f20 no-repeat center center fixed;
+  background: url(../img/agora_wallpaper_purple.png) #231f20 no-repeat center center fixed;
   min-height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
