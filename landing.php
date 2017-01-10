@@ -65,11 +65,25 @@ $(document).ready(function() {
 			</div>
 <header class="header" >
 
+<div class="row inner-navbar">
+          <div class="col-xs-6">
+            <a href="./"><img src="img/_agora_logo.png" alt="Logo"></a>
+          </div>
+          <div class="col-xs-6 signin text-right navbar-nav">
+            <a href="#about" class="scroll">About</a> &nbsp;&nbsp;
+            <a href="?page=forum/index">Forum</a> &nbsp;&nbsp;
+            <a href="?page=events">Events</a> &nbsp;&nbsp;
+            <a href="?page=jobs">Jobs</a> &nbsp;&nbsp;
+            <a href="#modal-form" data-toggle="modal">Sign in</a>
+          </div>
+        </div>
+
     <!-- sliding event card -->
     <div class="carousel slide auto" data-interval="6000">
         <div class="carousel-inner">
             <div class="item active">
                 <div class="row header-info">
+                
                     <div class="col-sm-10 col-sm-offset-1 text-center">
                         <h1 class="wow fadeIn">Welcome to Agora Code Community!</h1>
                         <br />
