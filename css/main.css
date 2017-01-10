@@ -11,7 +11,7 @@
 /* ==========================================================================
    Global styles
    ========================================================================== */
-h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
+h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .price, .list-inline, small, #pricing {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -56,6 +56,7 @@ p {
   color: #929496;
   font-weight: 400;
 }
+
 
 /*------------------Utilities---------------------*/
 a {
@@ -299,9 +300,7 @@ b:hover, b:focus {
    Main styles
    ========================================================================== */
 header {
-  background: url(../img/about.jpg) no-repeat center center;
   width: 100%;
-  padding: 20px 10px 60px 10px;
   height: 100vh;
   overflow: hidden;
   background-size: cover;
@@ -372,6 +371,10 @@ header {
 	padding: 200px 0px;
 }
 
+.pad-x2 {
+    padding: 100px 0px;
+}
+
 .pad-lg {
 	padding: 160px 0px;
 }
@@ -386,7 +389,7 @@ header {
 
 
 
-#about {
+#price {
   background: url(../img/agora_wallpaper_purple.png) #231f20 no-repeat center center fixed;
   min-height: 300px;
   -webkit-background-size: cover;
@@ -523,17 +526,19 @@ footer {
 }
 
 .price {
-    background: none repeat scroll 0 0 #231f20;
-    color: #FFFFFF;
-    font-size: 32px;
+    background: none repeat scroll 0 0 transparent;
+    color: transparent;
+    font-size: 12px;
     font-weight: bold;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 
 .pricing-table:hover li.price  {
-  background: #303236;
+    color: #FFFFFF;
+  background: transparent;
+    opacity: 0.5;
   -webkit-transition: all 0.85s ease-in-out;
   -moz-transition: all 0.85s ease-in-out;
   -o-transition: all 0.85s ease-in-out;

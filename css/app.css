@@ -3375,6 +3375,13 @@ a.bg-light:focus {
 .img-full img {
   width: 100%;
 }
+
+.img-half {
+  width: 30%;
+}
+.img-half img {
+  width: 30%;
+}
 .clear {
   display: block;
   overflow: hidden;

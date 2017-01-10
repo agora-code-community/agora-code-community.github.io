@@ -63,8 +63,66 @@ $(document).ready(function() {
 <div class="mouse-icon hidden-xs">
 				<div class="scroll"></div>
 			</div>
-<header class="header">
-      <div class="container">
+<header class="header" >
+
+    <!-- sliding event card -->
+    <div class="carousel slide auto" data-interval="6000">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row header-info">
+                    <div class="col-sm-10 col-sm-offset-1 text-center">
+                        <h1 class="wow fadeIn">Welcome to Agora Code Community!</h1>
+                        <br />
+                        <p class="lead wow fadeIn" data-wow-delay="0.5s">where coders come together to share resources and teach each other code. It's also platform to network and connect with other coders.</p>
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                                <div class="row">
+                                    <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                                        <a href="#about" class="btn btn-secondary btn-lg scroll">Learn More</a>
+                                    </div>
+                                    <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                                        <a href="#invite" class="btn btn-primary btn-lg scroll">Subscribe</a>
+                                    </div>
+                                </div><!--End Button Row-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <img src="images/testev1.png" alt="" class="img-full">
+            </div>
+            <div class="item">
+                <div class="row header-info">
+                    <div class="col-sm-10 col-sm-offset-1 text-center">
+                        <h1 class="wow fadeIn">Global Game Jam 2017</h1>
+                        <br />
+                        <p class="lead wow fadeIn" data-wow-delay="0.5s">Come and take part in one of the biggest game hackathons in  the world </p>
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                                <div class="row">
+                                    <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                                        <a href="#about" class="btn btn-secondary btn-lg scroll">Learn More</a>
+                                    </div>
+                                    <a href="http://www.eventbrite.com/e/test-event-tickets-30444529407?ref=ebtnebtckt" target="_blank">
+                                        <img src="https://www.eventbrite.com/custombutton?eid=30444529407" alt="Eventbrite - Test Event" />
+                                    </a>
+                                </div><!--End Button Row-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <img src="images/testev2.png" alt="" class="img-full">
+            </div>
+        </div>
+    </div>
+    <!-- /sliding event card -->
+
+    <!-- <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
@@ -82,47 +140,64 @@ $(document).ready(function() {
                   <a href="#modal-form" data-toggle="modal">Sign in</a>
               </ul>
           </div>
-        </div>
-
-        <div class="row header-info">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <h1 class="wow fadeIn">Welcome to Agora Code Community!</h1>
-            <br />
-            <p class="lead wow fadeIn" data-wow-delay="0.5s">where coders come together to share resources and teach each other code. It's also platform to network and connect with other coders.</p>
-            <br />
-
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                <div class="row">
-                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
-                    <a href="#about" class="btn btn-secondary btn-lg scroll">Learn More</a>
-                  </div>
-                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
-                    <a href="#invite" class="btn btn-primary btn-lg scroll">Subscribe</a>
-                  </div>
-                </div><!--End Button Row-->
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
+        </div>-->
     </header>
-<section id="about" class="pad-xl">
+<section id="price" class="pad-x2">
 <div class="container">
 <div class="row">
 <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
-<h2>About Us</h2>
-<p class="lead">We're an awesome community that loves to code.</p>
+<h2>Nerd Gear</h2>
+<p class="lead">Grab your awesome gear and dev in style!.</p>
 </div>
 </div>
 
-<div class="iphone wow fadeInUp" data-wow-delay="1s">
-<img src="img/iScreen.png">
-</div>
+    <div class="row margin-50">
+
+        <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="1s">
+            <br />
+            <ul class="list-unstyled pricing-table text-center">
+                <li class="price">#BINARY</li>
+                <img src="images/t-shirt-binary.png" alt="" width="100%">
+            </ul>
+        </div>
+
+        <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.4s">
+            <br />
+            <ul class="list-unstyled pricing-table text-center">
+                <li class="price">#CODEMAN</li>
+                <img src="images/t-shirt-code-man.png" alt="" width="100%">
+            </ul>
+        </div>
+
+        <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="1.3s">
+            <br />
+            <ul class="list-unstyled pricing-table text-center">
+                <li class="price">#CODEMODE</li>
+                <img src="images/t-shirt-switch.png" alt="" width="100%">
+            </ul>
+        </div>
+
+    </div>
 
 </div>
 </section>
+
+<!--About-->
+<section id="about" class="pad-lg">
+    <div class="container">
+        <div class="row margin-40">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <h2 class="white">Pricing</h2>
+                <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+            </div>
+        </div>
+
+
+
+     </div>
+</section>
+
+
 
 <section id="main-info" class="pad-xl">
 <div class="container">
