@@ -1,34 +1,40 @@
-<?php
-session_start(); // Starting Session
-$error=''; // Variable To Store Error Message
-if (isset($_POST['submit'])) {
-if (empty($_POST['username']) || empty($_POST['password'])) {
-$error = "Username or Password is invalid";
+<?php 
+if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
+	if (isset($_POST['login'])) // name of submit button
+	{
+		$email=$_POST['email'];
+		$email=strip_tags(trim($email));
+      $password=$_POST['password'];
+      $password=strip_tags($password);
+      $password=trim($password);
+      $query = "select * from account where email='$email'";
+      $result = mysqli_query($dbconn, $query) or die("Could not query") ;
+      $result2=mysqli_fetch_array($result);
+      $password_hash = $result2['password'];
+      $account_id = $result2['account_id'];
+      if (password_verify($password, $password_hash)){
+      	$validated = "1";
+      	$query = "select * from account where account_id='$account_id' and oauth_provider = 'email'";
+      	$result = mysqli_query($dbconn, $query) or die("Could not query") ;
+      	//$result2=pg_num_rows($result);
+      	$result2=mysqli_fetch_array($result);
+      	if($result2){
+      		$validated = $result2['validated'];
+      	}
+      	if($validated == 0){
+      		header("Location:index.php?page=signin&status=2");
+      	}else{
+      		$_SESSION['member']=$account_id;
+      		$loginmessage = '<div class="alert alert-success">
+							<button type="button" class="close" data-dismiss="alert">x</button>
+							<strong>Well done!</strong> logged in successfully...
+						</div>';
+      	}
+      	
+      }else{
+      	header("Location:index.php?page=signin&status=2");
+      }
 }
 else
-{
-// Define $username and $password
-$username=$_POST['username'];
-$password=$_POST['password'];
-// Establishing Connection with Server by passing server_name, user_id and password as a parameter
-$connection = mysql_connect("mysql9.000webhost.com", "a2292550_hilary", "smilan1899");
-// To protect MySQL injection for Security purpose
-$username = stripslashes($username);
-$password = stripslashes($password);
-$username = mysql_real_escape_string($username);
-$password = mysql_real_escape_string($password);
-// Selecting Database
-$db = mysql_select_db("a2292550_hilzdb", $connection);
-// SQL query to fetch information of registerd users and finds user match.
-$query = mysql_query("select * from agora_user where password='$password' AND username='$username'", $connection);
-$rows = mysql_num_rows($query);
-if ($rows == 1) {
-$_SESSION['login_user']=$username; // Initializing Session
-header("location: dashboard.php"); // Redirecting To Other Page
-} else {
-$error = "Username or Password is invalid";
-}
-mysql_close($connection); // Closing Connection
-}
-}
-?>
+{ 
+	}?>
