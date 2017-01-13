@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" class="app">
 <head>  
@@ -816,3 +817,6 @@
   <script type="text/javascript" src="js/jPlayer/demo.js"></script>
 </body>
 </html>
+=======
+<?php echo'dashboard'; ?>
+>>>>>>> 352e01043cbe1ae635818f5502d21014259e6faf
