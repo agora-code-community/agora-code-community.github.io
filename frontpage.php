@@ -11,9 +11,9 @@
         <div class="navbar-right ">
             <ul class="nav navbar-nav m-n hidden-xs nav-user user">
                 <li><a href="#about" class="scroll">About</a></li>
-                <li><a href="?page=forum/index">Forum</a></li>
+               <!-- <li><a href="?page=forum/index">Forum</a></li>-->
                 <li><a href="?page=events">Events</a></li>
-                <li><a href="?page=jobs">Jobs</a></li>
+                <!--<li><a href="?page=jobs">Jobs</a></li>-->
                 <?php if(isset($_SESSION['member']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')){
                     $user=$_SESSION['member'];
                     $getuser="SELECT * from account where account_id='$user'";

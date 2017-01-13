@@ -51,9 +51,9 @@ $(document).ready(function() {
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about" class="scroll">About</a></li>
-            <li><a href="?page=forum/index">Forum</a></li>
+            <!--<li><a href="?page=forum/index">Forum</a></li>-->
             <li><a href="?page=events">Events</a></li>
-            <li><a href="?page=jobs">Jobs</a></li>
+            <!--<li><a href="?page=jobs">Jobs</a></li>-->
             <li><a href="#modal-form" data-toggle="modal">Sign in</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
@@ -71,9 +71,9 @@ $(document).ready(function() {
           </div>
           <div class="col-xs-6 signin text-right navbar-nav">
             <a href="#about" class="scroll">About</a> &nbsp;&nbsp;
-            <a href="?page=forum/index">Forum</a> &nbsp;&nbsp;
+            <!--<a href="?page=forum/index">Forum</a> &nbsp;&nbsp;-->
             <a href="?page=events">Events</a> &nbsp;&nbsp;
-            <a href="?page=jobs">Jobs</a> &nbsp;&nbsp;
+            <!--<a href="?page=jobs">Jobs</a> &nbsp;&nbsp;-->
             <a href="#modal-form" data-toggle="modal">Sign in</a>
           </div>
         </div>
@@ -136,25 +136,7 @@ $(document).ready(function() {
     </div>
     <!-- /sliding event card -->
 
-    <!-- <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="logo" href="./"><img src="img/agora_logo_black_sml.png" alt="Logo"></a>
-        </div>
-          <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                  <a href="#about" class="scroll">About</a> &nbsp;&nbsp;
-                  <a href="?page=forum/index">Forum</a> &nbsp;&nbsp;
-                  <a href="?page=events">Events</a> &nbsp;&nbsp;
-                  <a href="?page=jobs">Jobs</a> &nbsp;&nbsp;
-                  <a href="#modal-form" data-toggle="modal">Sign in</a>
-              </ul>
-          </div>
-        </div>-->
+
     </header>
 <section id="price" class="pad-x2">
 <div class="container">
