@@ -229,8 +229,20 @@ $('.carousel').carousel({
     <div class="container">
         <div class="row margin-40">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-                <h2 class="white">Pricing</h2>
-                <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+                <h2>About</h2>
+                <p>Agora Code Community is a subsidiary of Agora Innovatus Limited. 
+                  It is an idea born with a purpose, to create a community both online 
+                  and off to encourage more partnership, improve the network of coders/programmers 
+                  and provide a platform for people of all ages to learn how to code/program across Africa. 
+                  A community will breed a more enabling environment for freelance coders and developers to 
+                  get access to resources and opportunities for Jobs and networking. Development of partnerships 
+                  with leading Software companies, upcoming companies and outreach groups will spur the growth 
+                  of the software industry in the country. We aim to encourage physical interaction as much as 
+                  online interaction, coding is fun, and it should be fun, we encourage coders to attend coding 
+                  events hosted near their respective locations as well as join online coding competitions. 
+                  The next generation is important to us and therefore reaching out to the next generation is 
+                  paramount if development is to be taken to the next level.
+                </p>
             </div>
         </div>
 
