@@ -281,7 +281,7 @@ b:hover, b:focus {
     padding: 10px 10px;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse .navbar-collapse2, .navbar-inverse .navbar-form {
     border-color: #DCCFEC;
 }
 
@@ -306,7 +306,7 @@ b:hover, b:focus {
    ========================================================================== */
 header {
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
   overflow: hidden;
   -webkit-background-size: cover;
   -moz-background-size: cover;
