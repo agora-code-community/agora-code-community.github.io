@@ -36,6 +36,9 @@ $(document).ready(function() {
 	});
 	
 });
+$('.carousel').carousel({
+    pause: "false"
+});
 </script>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -67,21 +70,39 @@ $(document).ready(function() {
 
 <div class="row inner-navbar">
           <div class="col-xs-6">
-            <a href="./"><img src="img/_agora_logo.png" alt="Logo"></a>
+            <a href="./"><img src="img/agora_logo_black_sml.png" alt="Logo"></a>
           </div>
           <div class="col-xs-6 signin text-right navbar-nav">
+          
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse2">
+            <span class="fa fa-bars"></span>
+          </button>
+          
+          </div>
+          <div class="col-xs-6 signin text-right navbar-nav">
+          <div class="navbar-collapse2 collapse">
             <a href="#about" class="scroll">About</a> &nbsp;&nbsp;
             <a href="?page=forum/index">Forum</a> &nbsp;&nbsp;
             <a href="?page=events">Events</a> &nbsp;&nbsp;
             <a href="?page=jobs">Jobs</a> &nbsp;&nbsp;
             <a href="#modal-form" data-toggle="modal">Sign in</a>
           </div>
+          </div>
+          
         </div>
 
     <!-- sliding event card -->
     <div class="carousel slide auto" data-interval="6000">
         <div class="carousel-inner">
-            <div class="item active">
+            <div class="item active" style="background: url(./images/testev1.png) no-repeat center center;
+  width: 100%;
+  padding: 20px 10px 60px 10px;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;">
                 <div class="row header-info">
                 
                     <div class="col-sm-10 col-sm-offset-1 text-center">
@@ -105,9 +126,17 @@ $(document).ready(function() {
 
                     </div>
                 </div>
-                <img src="images/testev1.png" alt="" class="img-full">
+
             </div>
-            <div class="item">
+            <div class="item" style="background: url(./images/testev2.png) no-repeat center center;
+  width: 100%;
+  padding: 20px 10px 60px 10px;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;">
                 <div class="row header-info">
                     <div class="col-sm-10 col-sm-offset-1 text-center">
                         <h1 class="wow fadeIn">Global Game Jam 2017</h1>
@@ -121,16 +150,15 @@ $(document).ready(function() {
                                     <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
                                         <a href="#about" class="btn btn-secondary btn-lg scroll">Learn More</a>
                                     </div>
-                                    <a href="http://www.eventbrite.com/e/test-event-tickets-30444529407?ref=ebtnebtckt" target="_blank">
-                                        <img src="https://www.eventbrite.com/custombutton?eid=30444529407" alt="Eventbrite - Test Event" />
-                                    </a>
+                                    <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                                        <a href="http://www.eventbrite.com/e/test-event-tickets-30444529407?ref=ebtnebtckt" target="_blank" class="btn btn-primary btn-lg">Buy Tickets on Eventbrite</a>
+                                    </div>
                                 </div><!--End Button Row-->
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <img src="images/testev2.png" alt="" class="img-full">
             </div>
         </div>
     </div>
