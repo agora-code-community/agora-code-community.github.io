@@ -402,6 +402,15 @@ header {
   background-size: cover;
 }
 
+#event {
+    background: url(../img/event_background.png) #231f20 no-repeat center center fixed;
+    min-height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 hr.line {
 	width: 100%;
 	border: 2px solid;

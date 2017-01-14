@@ -163,9 +163,109 @@ $('.carousel').carousel({
         </div>
     </div>
     <!-- /sliding event card -->
+</header>
+<!--/sliding header-->
+
+<!--event window-->
+<section id="event" class="pad-x2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
+                <h2>Our Next Event!.</h2>
+                <p class="lead"></p>
+            </div>
+        </div>
+
+        <div class="row margin-50">
+
+            <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1s">
+                <br />
+                <ul class="list-unstyled pricing-table text-center">
+                    <li class="price"></li>
+                    <img src="" alt="" width="100%">
+                </ul>
+            </div>
+
+            <div class="col-sm-6 pricing-container wow fadeInUp" data-wow-delay="0.4s">
+                <br />
+                <ul class="list-unstyled pricing-table text-center">
+                    <li class="price"></li>
+                    <img src="images/global_game_jam.png" alt="" width="70%">
+                </ul>
+            </div>
+
+            <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1.3s">
+                <br />
+                <ul class="list-unstyled pricing-table text-center">
+                    <li class="price"></li>
+                    <img src="images/globalgamejam_logo.png" alt="" width="50%">
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!--/event window-->
 
 
-    </header>
+
+<!--About-->
+<section id="about" class="pad-lg">
+    <div class="container">
+        <div class="row margin-40">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <h2 class="black">About Agora</h2>
+                <br/>
+                <p>Agora Code Community is a subsidiary of Agora Innovatus Limited. 
+                  It is an idea born with a purpose, to create a community both online 
+                  and off to encourage more partnership, improve the network of coders/programmers 
+                  and provide a platform for people of all ages to learn how to code/program across Africa. 
+                  A community will breed a more enabling environment for freelance coders and developers to 
+                  get access to resources and opportunities for Jobs and networking. Development of partnerships 
+                  with leading Software companies, upcoming companies and outreach groups will spur the growth 
+                  of the software industry in the country. We aim to encourage physical interaction as much as 
+                  online interaction, coding is fun, and it should be fun, we encourage coders to attend coding 
+                  events hosted near their respective locations as well as join online coding competitions. 
+                  The next generation is important to us and therefore reaching out to the next generation is 
+                  paramount if development is to be taken to the next level.
+                </p>
+            </div>
+        </div>
+     </div>
+</section>
+
+<section id="main-info" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+                <hr class="line purple">
+                <h3>Learn How to Code</h3>
+                <p>Be it experts, Newbies, Enthusiasts... The community provides the best environment
+                    for collaborations, networking, sharing ideas and having fun while coding.</p>
+            </div>
+            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
+                <hr  class="line blue">
+                <h3>Share Coding Experiences</h3>
+                <p>Show off those codes that took you an entire night to get it right.
+                    There is so much you can learn from other communty members.
+                    Have fun sharing those coding experiences.</p>
+            </div>
+            <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
+                <hr  class="line yellow">
+                <h3>Meet Cool Folks who love code</h3>
+                <p>Meet people who love code as much as you do and network.
+                    The community provides a good opportunity and environment for leaning.
+                    Be inspired by fellow coders.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--/About-->
+
+<!--t-shirt promotion-->
 
 <section id="price" class="pad-x2">
     <div class="container">
@@ -207,60 +307,7 @@ $('.carousel').carousel({
     </div>
 </section>
 
-
-<!--About-->
-<section id="about" class="pad-lg">
-    <div class="container">
-        <div class="row margin-40">
-            <div class="col-sm-8 col-sm-offset-2 text-center">
-                <h2 class="black">About Agora</h2>
-                <br/>
-                <p>Agora Code Community is a subsidiary of Agora Innovatus Limited. 
-                  It is an idea born with a purpose, to create a community both online 
-                  and off to encourage more partnership, improve the network of coders/programmers 
-                  and provide a platform for people of all ages to learn how to code/program across Africa. 
-                  A community will breed a more enabling environment for freelance coders and developers to 
-                  get access to resources and opportunities for Jobs and networking. Development of partnerships 
-                  with leading Software companies, upcoming companies and outreach groups will spur the growth 
-                  of the software industry in the country. We aim to encourage physical interaction as much as 
-                  online interaction, coding is fun, and it should be fun, we encourage coders to attend coding 
-                  events hosted near their respective locations as well as join online coding competitions. 
-                  The next generation is important to us and therefore reaching out to the next generation is 
-                  paramount if development is to be taken to the next level.
-                </p>
-            </div>
-        </div>
-     </div>
-</section>
-
-
-
-<section id="main-info" >
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
-                <hr class="line purple">
-                <h3>Learn How to Code</h3>
-                <p>Be it experts, Newbies, Enthusiasts... The community provides the best environment
-                    for collaborations, networking, sharing ideas and having fun while coding.</p>
-            </div>
-            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
-                <hr  class="line blue">
-                <h3>Share Coding Experiences</h3>
-                <p>Show off those codes that took you an entire night to get it right.
-                    There is so much you can learn from other communty members.
-                    Have fun sharing those coding experiences.</p>
-            </div>
-            <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
-                <hr  class="line yellow">
-                <h3>Meet Cool Folks who love code</h3>
-                <p>Meet people who love code as much as you do and network.
-                    The community provides a good opportunity and environment for leaning.
-                    Be inspired by fellow coders.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<!--/t-shirt promotion-->
 
 
 <section id="invite" class="pad-lg light-gray-bg">
