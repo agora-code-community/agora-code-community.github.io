@@ -148,8 +148,9 @@ $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPe
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  
-    <div class="modal fade" id="modal-form">
+
+<!--Sign in dialog-->
+   <div class="modal fade" id="modal-form">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body wrapper-lg">
@@ -187,6 +188,24 @@ $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPe
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div>
+<!--Sign in dialog-->
+
+	<!--ticket dialog-->
+    <div class="modal fade" id="modal-form-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body wrapper-lg">
+                    <div class="row">
+                        <div class="container-fluid" style="width:100%; text-align:left;">
+                            <iframe src="//eventbrite.com/tickets-external?eid=29684227323&ref=etckt" frameborder="0" height="275" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+	<!--ticket dialog-->
   
   <!-- Bootstrap -->
   <script src="js/bootstrap.js"></script>
