@@ -255,6 +255,8 @@ b:hover, b:focus {
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: fixed;
     top: -60px;
     transition: top 0.4s ease 0s;
@@ -265,7 +267,7 @@ b:hover, b:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-nav a {
-    color: #934c93;
+    color: #929496;
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -396,6 +398,8 @@ header {
 #price {
   background: url(../img/agora_wallpaper_purple.png) #231f20 no-repeat center center fixed;
   min-height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -405,6 +409,8 @@ header {
 #event {
     background: url(../img/event_background.png) #231f20 no-repeat center center fixed;
     min-height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -625,6 +631,31 @@ footer {
 #be-the-first {
       background-attachment: scroll;
   }
+    .sml {
+        display: none;
+    }
+
+    #price {
+        background: url(../img/agora_wallpaper_purple_potrait.png) #231f20 no-repeat center center fixed;
+        min-height: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #event {
+        background: url(../img/event_background_potrait.png) #231f20 no-repeat center center fixed;
+        min-height: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
 }
 
@@ -635,6 +666,10 @@ footer {
 #be-the-first {
       background-attachment: scroll;
   }
+
+    .sml {
+        display: none;
+    }
 
 }
 

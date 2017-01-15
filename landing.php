@@ -68,7 +68,7 @@ $('.carousel').carousel({
 			</div>
 <header class="header" >
 
-<div class="row inner-navbar">
+<!--<div class="row inner-navbar">
           <div class="col-xs-6">
             <a href="./"><img src="img/agora_logo_black_sml.png" alt="Logo"></a>
           </div>
@@ -83,18 +83,18 @@ $('.carousel').carousel({
           <div class="navbar-collapse2 collapse">
             <a href="#about" class="scroll">About</a> &nbsp;&nbsp;
             <!--<a href="?page=forum/index">Forum</a> &nbsp;&nbsp;-->
-              <a href="#event" class="scroll">Events</a> &nbsp;&nbsp;
+              <!--<a href="#event" class="scroll">Events</a> &nbsp;&nbsp;-->
             <!--<a href="?page=jobs">Jobs</a> &nbsp;&nbsp;-->
-            <a href="#modal-form" data-toggle="modal">Sign in</a>
-          </div>
+            <!--<a href="#modal-form" data-toggle="modal">Sign in</a>-->
+         <!-- </div>
           </div>
           
-        </div>
+        </div>-->
 
     <!-- sliding event card -->
     <div class="carousel slide auto" data-interval="6000">
         <div class="carousel-inner">
-            <div class="item active" style="background: url(./images/testev1.png) no-repeat center center;
+            <div class="item active" style="background: url(./img/about.jpg) no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
@@ -128,7 +128,7 @@ $('.carousel').carousel({
                 </div>
 
             </div>
-            <div class="item" style="background: url(./images/testev2.png) no-repeat center center;
+           <!-- <div class="item" style="background: url(./images/testev2.png) no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
@@ -153,13 +153,13 @@ $('.carousel').carousel({
                                     <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
                                         <a href="http://www.eventbrite.com/e/test-event-tickets-30444529407?ref=ebtnebtckt" target="_blank" class="btn btn-primary btn-lg">Buy Tickets on Eventbrite</a>
                                     </div>
-                                </div><!--End Button Row-->
+                                </div><!--End Button Row--><!--
                             </div>
                         </div>
 
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
     <!-- /sliding event card -->
@@ -171,36 +171,39 @@ $('.carousel').carousel({
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
-                <h2>Our Next Event!.</h2>
+                <h2>Presenting..</h2>
                 <p class="lead"></p>
             </div>
         </div>
 
         <div class="row margin-50">
 
-            <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1s" width="80%">
-                <br />
-                <ul class="list-unstyled pricing-table text-center">
-                    <li class="headline"><h5 class="white">Description</h5></li>
-                    <li class="info">The Global Game Jam® (GGJ) is the world's largest game jam event (game creation) taking place around the world at physical locations. Think of it as a hackathon focused on game development. It is the growth of an idea that in today’s heavily connected world, we could come together, be creative, share experiences and express ourselves in a multitude of ways using video games – it is very universal.<br> Please don't forget to register on our event page and also in the Global Game Jam Site.</li>
-                    <li class="features last btn btn-secondary btn-wide"><a href="#modal-form-2" data-toggle="modal">Register Now..</a></li>
-                    <li class="features last btn btn-secondary btn-wide"><a href="#" data-toggle="modal">Register on GGJ site..</a></li>
-                    <li class="features"><a href="#">Other info</a></li>
-                </ul>
+            <div class="sml">
+                <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1.3s">
+                    <br />
+                    <div class="list-unstyled pricing-table text-center">
+                        <a href="http://globalgamejam.org/2017/jam-sites/agora-code-community"><img src="images/globalgamejam_logo.png" alt="" width="50%"></a>
+                    </div>
+                </div>
             </div>
+
 
             <div class="col-sm-6 pricing-container wow fadeInUp" data-wow-delay="0.4s">
                 <br />
                 <div class="list-unstyled pricing-table text-center">
-                    <img src="images/global_game_jam.png" alt="" width="70%">
+                    <a href="http://globalgamejam.org/2017/jam-sites/agora-code-community"><img src="images/global_game_jam.png" alt="" width="70%"></a>
                 </div>
             </div>
 
-            <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1.3s">
+            <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1s" width="80%">
                 <br />
-                <div class="list-unstyled pricing-table text-center">
-                    <img src="images/globalgamejam_logo.png" alt="" width="50%">
-                </div>
+                <ul class="list-unstyled pricing-table text-center">
+                    <li class="headline"><h5 class="white">Event Info..</h5></li>
+                    <li class="info">The Global Game Jam® (GGJ) is the world's largest game jam event (game creation) taking place around the world at physical locations. Think of it as a hackathon focused on game development. It is the growth of an idea that in today’s heavily connected world, we could come together, be creative, share experiences and express ourselves in a multitude of ways using video games – it is very universal.<br> Please don't forget to register on our event page and also in the Global Game Jam Site.</li>
+                    <li class="features last btn btn-secondary btn-wide"><a href="#modal-form-2" data-toggle="modal">Register Now..</a></li>
+                    <li class="features last btn btn-secondary btn-wide"><a href="http://globalgamejam.org/2017/jam-sites/agora-code-community">Register on GGJ site..</a></li>
+                    <li class="features"><a href="#">Other info</a></li>
+                </ul>
             </div>
 
         </div>
@@ -211,7 +214,7 @@ $('.carousel').carousel({
 
 
 <!--About-->
-<section id="about" class="pad-lg">
+<section id="about" class="pad-x2">
     <div class="container">
         <div class="row margin-40">
             <div class="col-sm-10 col-sm-offset-1 text-center wow fadeIn" data-wow-delay="0.6s">
@@ -268,7 +271,7 @@ $('.carousel').carousel({
 
 <!--t-shirt promotion-->
 
-<section id="price" class="pad-x2">
+<section id="price" class="pad-x2" media="(min-width: 400px)">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
@@ -279,12 +282,15 @@ $('.carousel').carousel({
 
         <div class="row margin-50">
 
-            <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="1s">
-                <br />
-                <ul class="list-unstyled pricing-table text-center">
-                    <li class="price">#BINARY</li>
-                    <img src="images/t-shirt-binary.png" alt="" width="100%">
-                </ul>
+            <!--sml class to remove a view on a mobile screen-->
+            <div class="sml">
+                <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="1s">
+                    <br />
+                    <ul class="list-unstyled pricing-table text-center">
+                        <li class="price">#BINARY</li>
+                        <img src="images/t-shirt-binary.png" alt="" width="100%">
+                    </ul>
+                </div>
             </div>
 
             <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.4s">
@@ -295,12 +301,14 @@ $('.carousel').carousel({
                 </ul>
             </div>
 
-            <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="1.3s">
-                <br />
-                <ul class="list-unstyled pricing-table text-center">
-                    <li class="price">#CODEMODE</li>
-                    <img src="images/t-shirt-switch.png" alt="" width="100%">
-                </ul>
+            <div class="sml">
+                <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="1.3s">
+                    <br />
+                    <ul class="list-unstyled pricing-table text-center">
+                        <li class="price">#CODEMODE</li>
+                        <img src="images/t-shirt-switch.png" alt="" width="100%">
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -357,7 +365,7 @@ $('.carousel').carousel({
             </div>
         </div>
 
-        <div class="row margin-30 news-container">
+        <!--<div class="row margin-30 news-container">
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 wow fadeInLeft" data-wow-delay="1.2s">
                 <a href="#" target="_blank">
                     <img class="news-img pull-left" src="img/press-02.jpg" alt="Forbes">
@@ -365,7 +373,7 @@ $('.carousel').carousel({
                         <small><em>Forbes - Feb 25, 2015</em></small></p>
                 </a>
             </div>
-        </div>
+        </div>-->
 
     </div>
 </section>
