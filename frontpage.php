@@ -11,7 +11,7 @@
         <div class="navbar-right ">
             <ul class="nav navbar-nav m-n hidden-xs nav-user user">
                 <li><a href="#about" class="scroll">About</a></li>
-               <!-- <li><a href="?page=forum/index">Forum</a></li>-->
+                <!-- <li><a href="?page=forum/index">Forum</a></li>-->
                 <li><a href="?page=events">Events</a></li>
                 <!--<li><a href="?page=jobs">Jobs</a></li>-->
                 <?php if(isset($_SESSION['member']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')){
@@ -116,7 +116,7 @@
             <a href='https://www.facebook.com/agoracodecomm' class="btn btn-rounded btn-sm btn-icon btn-default" target="_blank"><i data-toggle="tooltip" data-placement="top" title="facebook" class="fa fa-facebook"></i></a>
         </p>
     </footer>
-    
+
 
 
 </section>
