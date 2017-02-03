@@ -1,45 +1,7 @@
 <?php
 if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
 ?>
-<script language="javascript">
-    $(document).ready(function() {
 
-        var loading;
-        var results;
-
-        form = document.getElementById('form');
-        loading = document.getElementById('loading');
-        results = document.getElementById('results');
-
-        $('#Submit').click( function() {
-
-            if($('#email').val() == "")
-            {
-                $('#results').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">x</button><strong>Oops!</strong> Please Enter Your Email Address.</div>');
-
-                return false;
-            }
-
-            results.style.display = 'none';
-            $('#results').html('');
-            loading.style.display = 'inline';
-
-            $.post('subscribe.php?email=' + escape($('#email').val()),{
-            }, function(response){
-
-                results.style.display = 'block';
-                $('#results').html(unescape(response));
-                loading.style.display = 'none';
-            });
-
-            return false;
-        });
-
-    });
-    $('.carousel').carousel({
-        pause: "false"
-    });
-</script>
 
 <!--loading page style sheet-->
 <style>
@@ -95,12 +57,47 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
         text-align: center;
     }
 </style>
-<!--/loading page style sheet-->
+<!-- end of loading page style sheet-->
+
+<!--image slider style sheet-->
+<style scoped>
+    /* jssor slider arrow navigator skin 02 css */
+    /*
+    .jssora02l                  (normal)
+    .jssora02r                  (normal)
+    .jssora02l:hover            (normal mouseover)
+    .jssora02r:hover            (normal mouseover)
+    .jssora02l.jssora02ldn      (mousedown)
+    .jssora02r.jssora02rdn      (mousedown)
+    .jssora02l.jssora02lds      (disabled)
+    .jssora02r.jssora02rds      (disabled)
+    */
+    .jssora02l, .jssora02r {
+        display: block;
+        position: absolute;
+        /* size of arrow element */
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .jssora02l { background-position: -3px -33px; }
+    .jssora02r { background-position: -63px -33px; }
+    .jssora02l:hover { background-position: -123px -33px; }
+    .jssora02r:hover { background-position: -183px -33px; }
+    .jssora02l.jssora02ldn { background-position: -3px -33px; }
+    .jssora02r.jssora02rdn { background-position: -63px -33px; }
+    .jssora02l.jssora02lds { background-position: -3px -33px; opacity: .3; pointer-events: none; }
+    .jssora02r.jssora02rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
+    /* jssor slider thumbnail navigator skin 03 css *//*.jssort03 .p            (normal).jssort03 .p:hover      (normal mouseover).jssort03 .pav          (active).jssort03 .pdn          (mousedown)*/.jssort03 .p {    position: absolute;    top: 0;    left: 0;    width: 62px;    height: 32px;}.jssort03 .t {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}.jssort03 .w, .jssort03 .pav:hover .w {    position: absolute;    width: 60px;    height: 30px;    border: white 1px dashed;    box-sizing: content-box;}.jssort03 .pdn .w, .jssort03 .pav .w {    border-style: solid;}.jssort03 .c {    position: absolute;    top: 0;    left: 0;    width: 62px;    height: 32px;    background-color: #000;    filter: alpha(opacity=45);    opacity: .45;    transition: opacity .6s;    -moz-transition: opacity .6s;    -webkit-transition: opacity .6s;    -o-transition: opacity .6s;}.jssort03 .p:hover .c, .jssort03 .pav .c {    filter: alpha(opacity=0);    opacity: 0;}.jssort03 .p:hover .c {    transition: none;    -moz-transition: none;    -webkit-transition: none;    -o-transition: none;}* html .jssort03 .w {    width /**/: 62px;    height /**/: 32px;}
+</style>
+
+<!--end of slider style sheet-->
 
 <body onload="myFunction()" style="margin:0;">
-
 <div id="loader"></div>
 
+<!--Begining of landing page-->
 <div style="display:none;" id="myDiv" class="animate-bottom">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -110,7 +107,7 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="logo" href="./"><img src="img/agora_logo_white_sml.png" alt="Logo"></a>
+                <a class="logo" href="./"><img src="images/logo_small.png" alt="Logo" ></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -129,7 +126,7 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
     </div>
     <header class="header" >
 
-        <!--<div class="row inner-navbar">
+        <div class="row inner-navbar">
                   <div class="col-xs-6">
                     <a href="./"><img src="img/agora_logo_black_sml.png" alt="Logo"></a>
                   </div>
@@ -144,19 +141,19 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
                   <div class="navbar-collapse2 collapse">
                     <a href="#about" class="scroll">About</a> &nbsp;&nbsp;
                     <!--<a href="?page=forum/index">Forum</a> &nbsp;&nbsp;-->
-        <!--<a href="#event" class="scroll">Events</a> &nbsp;&nbsp;-->
+                    <a href="#event" class="scroll">Events</a> &nbsp;&nbsp;
         <!--<a href="?page=jobs">Jobs</a> &nbsp;&nbsp;-->
         <!--<a href="#modal-form" data-toggle="modal">Sign in</a>-->
-        <!-- </div>
+         </div>
          </div>
 
-       </div>-->
+       </div>
 
         <!-- sliding event card -->
-        <div class="carousel slide auto" data-interval="6000">
+        <div class="carousel slide auto" data-interval="15000">
             <div class="carousel-inner">
-                <div class="item active" style="background: url(./img/about.jpg) no-repeat center center;
-  width: 100%;
+                <div class="item active" style="background: url(./images/kuma.png) no-repeat center center;
+  width: 100%;x
   padding: 20px 10px 60px 10px;
   height: 100vh;
   overflow: hidden;
@@ -169,7 +166,7 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
                         <div class="col-sm-10 col-sm-offset-1 text-center">
                             <h1 class="wow fadeIn">Welcome to Agora Code Community!</h1>
                             <br />
-                            <p class="lead wow fadeIn" data-wow-delay="0.5s">where coders come together to share resources and teach each other code. It's also platform to network and connect with other coders.</p>
+                            <p class="lead wow fadeIn sml" data-wow-delay="0.5s">where coders come together to share resources and teach each other code. It's also platform to network and connect with other coders.</p>
                             <br />
 
                             <div class="row">
@@ -189,7 +186,7 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
                     </div>
 
                 </div>
-                <!-- <div class="item" style="background: url(./images/testev2.png) no-repeat center center;
+                <div class="item" style="background: url(./images/picaso.png) no-repeat center center;
        width: 100%;
        padding: 20px 10px 60px 10px;
        height: 100vh;
@@ -200,9 +197,9 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
        -o-background-size: cover;">
                      <div class="row header-info">
                          <div class="col-sm-10 col-sm-offset-1 text-center">
-                             <h1 class="wow fadeIn">Global Game Jam 2017</h1>
+                             <h1 class="wow fadeIn">Learn, Code, Collaborate</h1>
                              <br />
-                             <p class="lead wow fadeIn" data-wow-delay="0.5s">Come and take part in one of the biggest game hackathons in  the world </p>
+                             <p class="lead wow fadeIn" data-wow-delay="0.5s">Come and take part in our events </p>
                              <br />
 
                              <div class="row">
@@ -212,15 +209,16 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
                                              <a href="#about" class="btn btn-secondary btn-lg scroll">Learn More</a>
                                          </div>
                                          <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
-                                             <a href="http://www.eventbrite.com/e/test-event-tickets-30444529407?ref=ebtnebtckt" target="_blank" class="btn btn-primary btn-lg">Buy Tickets on Eventbrite</a>
+                                             <a href="#invite" class="btn btn-primary btn-lg scroll">Subscribe</a>
                                          </div>
-                                     </div><!--End Button Row--><!--
+                                     </div>
+                                     <!--End Button Row-->
                             </div>
                         </div>
 
                     </div>
                 </div>
-            </div>-->
+            </div>
             </div>
         </div>
         <!-- /sliding event card -->
@@ -228,45 +226,28 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
     <!--/sliding header-->
 
     <!--event window-->
-    <section id="event" class="pad-x2">
+    <section id="event" class="row pad-x2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
-                    <h2>Presenting..</h2>
-                    <p class="lead"></p>
+                    <h2>Thank You!!</h2>
+                    <p class="lead">To all those that took there time to take part in our event. It was a whole lot of fun please join us next time!!</p>
                 </div>
             </div>
 
             <div class="row margin-50">
 
-                <div class="sml">
-                    <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1.3s">
-                        <br />
-                        <div class="list-unstyled pricing-table text-center">
-                            <a href="http://globalgamejam.org/2017/jam-sites/agora-code-community"><img src="images/globalgamejam_logo.png" alt="" width="50%"></a>
-                        </div>
+                <!--first row-->
+                <div class="row pricing-container wow fadeInUp" data-wow-delay="0.4s" width="100%">
+
+                    <div class="list-unstyled pricing-table">
+                        <a href="http://globalgamejam.org/2017/jam-sites/agora-code-community"><img src="images/global_game_jam.png" alt="" width="25%" </a>
                     </div>
+
                 </div>
 
-
-                <div class="col-sm-6 pricing-container wow fadeInUp" data-wow-delay="0.4s">
-                    <br />
-                    <div class="list-unstyled pricing-table text-center">
-                        <a href="http://globalgamejam.org/2017/jam-sites/agora-code-community"><img src="images/global_game_jam.png" alt="" width="70%"></a>
-                    </div>
-                </div>
-
-                <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="1s" width="80%">
-                    <br />
-                    <ul class="list-unstyled pricing-table text-center">
-                        <li class="headline"><h5 class="white">Event Info..</h5></li>
-                        <li class="info">The Global Game Jam® (GGJ) is the world's largest game jam event (game creation) taking place around the world at physical locations. Think of it as a hackathon focused on game development. It is the growth of an idea that in today’s heavily connected world, we could come together, be creative, share experiences and express ourselves in a multitude of ways using video games – it is very universal.<br> Please don't forget to register on our event page and also in the Global Game Jam Site.</li>
-                        <li class="features last btn btn-secondary btn-wide"><a href="#modal-form-2" data-toggle="modal">Register Now..</a></li>
-                        <li class="features last btn btn-secondary btn-wide"><a href="http://globalgamejam.org/2017/jam-sites/agora-code-community">Register on GGJ site..</a></li>
-                        <li class="features"><a href="#">Other info</a></li>
-                    </ul>
-                </div>
-
+                <!--second row-->
+                
             </div>
         </div>
     </section>
@@ -489,3 +470,85 @@ if(!defined("IS_INCLUDED")){header("Location:unauthorised_error.php");}
 <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
 <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+
+
+<!--image slider script-->
+<script src="js/jssor.slider-22.1.8.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jssor_1_slider_init = function() {
+
+        var jssor_1_options = {
+            $AutoPlay: true,
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 9,
+                $SpacingX: 3,
+                $SpacingY: 3,
+                $Align: 260
+            }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*responsive code begin*/
+        function ScaleSlider() {
+            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 600);
+                jssor_1_slider.$ScaleWidth(refSize);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+        ScaleSlider();
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        /*responsive code end*/
+    };
+</script>
+<script type="text/javascript">jssor_1_slider_init();</script>
+
+<script language="javascript">
+    $(document).ready(function() {
+
+        var loading;
+        var results;
+
+        form = document.getElementById('form');
+        loading = document.getElementById('loading');
+        results = document.getElementById('results');
+
+        $('#Submit').click( function() {
+
+            if($('#email').val() == "")
+            {
+                $('#results').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">x</button><strong>Oops!</strong> Please Enter Your Email Address.</div>');
+
+                return false;
+            }
+
+            results.style.display = 'none';
+            $('#results').html('');
+            loading.style.display = 'inline';
+
+            $.post('subscribe.php?email=' + escape($('#email').val()),{
+            }, function(response){
+
+                results.style.display = 'block';
+                $('#results').html(unescape(response));
+                loading.style.display = 'none';
+            });
+
+            return false;
+        });
+
+    });
+    $('.carousel').carousel({
+        pause: "false"
+    });
+</script>

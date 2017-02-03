@@ -1,14 +1,14 @@
 <?php
-define('CONSUMER_KEY', 'your-twitter-consumer-key');
-define('CONSUMER_SECRET', 'your-twitter-consumer-secret-key');
-define('OAUTH_CALLBACK', 'your-twitter-callback-url');
+define('CONSUMER_KEY', 'ENUKTqUw8HG05fj3yzK0I7xZG');
+define('CONSUMER_SECRET', 'c3iy9osbsruizoncjzSCAYxVIlUr8SmykVJZVNYlJikd9M7hPM');
+define('OAUTH_CALLBACK', 'http://agoracode.community/process.php');
 
 //Facebook
 include_once("inc/facebook.php"); //include facebook SDK
 ######### Facebook API Configuration ##########
-$appId = 'your-facebook-appid'; //Facebook App ID
-$appSecret = 'your-facebook-secret-key'; // Facebook App Secret
-$homeurl = 'your home url';  //return to home
+$appId = '331968697159745'; //Facebook App ID
+$appSecret = '5a8e42a2680a8e52574f339532796108'; // Facebook App Secret
+$homeurl = 'http://agoracode.community/';  //return to home
 $fbPermissions = 'email';  //Required facebook permissions
 
 //Call Facebook API
@@ -19,7 +19,6 @@ $facebook = new Facebook(array(
 ));
 $fbuser = $facebook->getUser();
 //End Facebook
-
 //Connect databse
 $dbconn = mysqli_connect('localhost','root','','agora');
 //$dbconn = mysqli_connect('icifrost.me','icifrost_agora','agora19112016!','icifrost_agora');
@@ -47,7 +46,7 @@ define('TO_EMAIL', 'admin@mwanta.com');
 
 //Subject For Email
 define('SUBJECT', 'Contact from your website');
-define('USERSUBJECT', 'Welcome to Agora Code Community Newsletter');
+define('USERSUBJECT', 'Welcome to Mwanta');
 
 //Subscription
 define('SUBSCRIPTION', 'Yes');
@@ -55,7 +54,7 @@ define('SUBSCRIPTION', 'Yes');
 
 //Messages
 define('SUBSCRIBER_MAIL_MESSAGE', 'New subscriber subscribed to our website');
-define('USER_SUBSCRIBER_MAIL_MESSAGE', 'Subscribed Successfully, To unsubscribe http://agora.icifrost.me/unsubscribe/');
+define('USER_SUBSCRIBER_MAIL_MESSAGE', 'Subscribed Successfully, To unsubscribe http://demo.niralar.com/viraivil/unsubscribe/');
 define('MSG_INVALID_NAME', 'Please enter your name.');
 define('MSG_INVALID_EMAIL', 'Please enter valid e-mail.');
 define('MSG_INVALID_MESSAGE', 'Please enter your message.');
@@ -63,6 +62,4 @@ define('MSG_SEND_ERROR', 'Sorry, we can\'t send this message.');
 define('MSG_INVALID_SUBSCRIBE_EMAIL', 'Oops! Please enter a valid email address');
 
 //-> END NEWSLETTER
-
-$numtopicsperpage = 20;
 ?>

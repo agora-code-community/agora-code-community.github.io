@@ -1,0 +1,395 @@
+[12-Dec-2016 09:39:02 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[12-Dec-2016 18:16:09 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[12-Dec-2016 23:21:26 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[12-Dec-2016 23:21:54 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[13-Dec-2016 06:21:54 Africa/Lusaka] PHP Warning:  include(forum/index.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:21:54 Africa/Lusaka] PHP Warning:  include(forum/index.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:21:54 Africa/Lusaka] PHP Warning:  include(): Failed opening 'forum/index.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/agora/index.php on line 182
+[12-Dec-2016 23:21:57 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[13-Dec-2016 06:21:57 Africa/Lusaka] PHP Warning:  include(jobs.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:21:57 Africa/Lusaka] PHP Warning:  include(jobs.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:21:57 Africa/Lusaka] PHP Warning:  include(): Failed opening 'jobs.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/agora/index.php on line 182
+[12-Dec-2016 23:21:57 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[13-Dec-2016 06:21:57 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:21:57 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:21:57 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/agora/index.php on line 182
+[12-Dec-2016 23:21:58 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[12-Dec-2016 23:22:00 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[13-Dec-2016 06:22:00 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:22:00 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:22:00 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/agora/index.php on line 182
+[12-Dec-2016 23:22:00 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[13-Dec-2016 06:22:00 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:22:00 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 06:22:00 Africa/Lusaka] PHP Warning:  include(): Failed opening 'legal/legal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/agora/index.php on line 182
+[13-Dec-2016 03:36:56 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/agora/configuration.php on line 3
+[13-Dec-2016 03:48:15 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/configuration.php on line 3
+[13-Dec-2016 03:51:24 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/configuration.php on line 3
+[13-Dec-2016 11:01:31 Africa/Lusaka] PHP Warning:  include(forum/index.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 11:01:31 Africa/Lusaka] PHP Warning:  include(forum/index.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 11:01:31 Africa/Lusaka] PHP Warning:  include(): Failed opening 'forum/index.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 11:08:33 Africa/Lusaka] PHP Warning:  include(jobs.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 11:08:33 Africa/Lusaka] PHP Warning:  include(jobs.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 11:08:33 Africa/Lusaka] PHP Warning:  include(): Failed opening 'jobs.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:22 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:22 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:22 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:22 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:22 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:22 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'job-posting.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'legal/legal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'job-posting.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'legal/legal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'job-posting.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'job-posting.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'legal/legal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 20:24:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'legal/legal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[13-Dec-2016 22:06:47 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 22:06:47 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[13-Dec-2016 22:07:14 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[13-Dec-2016 22:07:14 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[14-Dec-2016 11:52:19 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[14-Dec-2016 11:52:19 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[14-Dec-2016 11:52:19 Africa/Lusaka] PHP Warning:  include(): Failed opening 'job-posting.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[14-Dec-2016 11:58:48 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[14-Dec-2016 11:58:48 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[14-Dec-2016 14:18:42 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[14-Dec-2016 14:18:42 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[14-Dec-2016 14:18:42 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:07 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:07 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:07 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:17 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[15-Dec-2016 08:32:17 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[15-Dec-2016 08:32:20 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[15-Dec-2016 08:32:20 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[15-Dec-2016 08:32:23 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:23 Africa/Lusaka] PHP Warning:  include(job-posting.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'job-posting.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:26 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:26 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 08:32:26 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 182
+[15-Dec-2016 01:47:39 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/agoracode/public_html/configuration.php on line 2
+[15-Dec-2016 01:49:02 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/agoracode/public_html/includes/functions.php on line 13
+[15-Dec-2016 09:00:57 Africa/Lusaka] PHP Warning:  include(privacy.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:57 Africa/Lusaka] PHP Warning:  include(privacy.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:57 Africa/Lusaka] PHP Warning:  include(): Failed opening 'privacy.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:59 Africa/Lusaka] PHP Warning:  include(privacy.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:59 Africa/Lusaka] PHP Warning:  include(privacy.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:59 Africa/Lusaka] PHP Warning:  include(): Failed opening 'privacy.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:59 Africa/Lusaka] PHP Warning:  include(tos.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:59 Africa/Lusaka] PHP Warning:  include(tos.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:00:59 Africa/Lusaka] PHP Warning:  include(): Failed opening 'tos.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:20:03 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:20:03 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 09:20:03 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 11:32:13 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 11:32:13 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 11:32:13 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/index.php on line 230
+[15-Dec-2016 11:32:45 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[15-Dec-2016 11:32:45 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[15-Dec-2016 12:33:24 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 12:33:24 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 12:33:24 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:13:02 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:13:02 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:13:02 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:13:22 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:13:22 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:13:22 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:14:01 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:14:01 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[15-Dec-2016 14:14:01 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 89
+[16-Dec-2016 10:55:51 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[16-Dec-2016 10:55:51 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[16-Dec-2016 10:55:51 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[16-Dec-2016 11:15:10 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[16-Dec-2016 11:15:10 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[18-Dec-2016 13:46:12 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[18-Dec-2016 13:46:12 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[18-Dec-2016 13:46:12 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[18-Dec-2016 13:46:37 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[18-Dec-2016 13:46:37 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[18-Dec-2016 13:46:37 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 03:50:46 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 03:50:46 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 03:50:46 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:27:48 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:27:48 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:27:48 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:27:49 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:27:49 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:27:49 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:31:38 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[19-Dec-2016 11:31:38 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[19-Dec-2016 11:32:10 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:32:10 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[19-Dec-2016 11:32:10 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[21-Dec-2016 15:49:37 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[21-Dec-2016 15:49:37 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[21-Dec-2016 15:49:37 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:42:58 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:42:58 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:42:58 Africa/Lusaka] PHP Warning:  include(): Failed opening 'legal/legal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:42:59 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:42:59 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:42:59 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:43:00 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:43:00 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[22-Dec-2016 22:43:00 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:38:42 Africa/Lusaka] PHP Warning:  include(forum/process.php.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:38:42 Africa/Lusaka] PHP Warning:  include(forum/process.php.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:38:42 Africa/Lusaka] PHP Warning:  include(): Failed opening 'forum/process.php.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:39:35 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:39:35 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:39:35 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:46:49 Africa/Lusaka] PHP Warning:  include(forum/?page=jobs.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:46:49 Africa/Lusaka] PHP Warning:  include(forum/?page=jobs.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:46:49 Africa/Lusaka] PHP Warning:  include(): Failed opening 'forum/?page=jobs.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:48:49 Africa/Lusaka] PHP Warning:  include(forum/?page=member.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:48:49 Africa/Lusaka] PHP Warning:  include(forum/?page=member.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:48:49 Africa/Lusaka] PHP Warning:  include(): Failed opening 'forum/?page=member.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:50:02 Africa/Lusaka] PHP Warning:  include(forum/process.php.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:50:02 Africa/Lusaka] PHP Warning:  include(forum/process.php.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:50:02 Africa/Lusaka] PHP Warning:  include(): Failed opening 'forum/process.php.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:51:28 Africa/Lusaka] PHP Warning:  include(forum/?page=forum/index.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:51:28 Africa/Lusaka] PHP Warning:  include(forum/?page=forum/index.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[25-Dec-2016 11:51:28 Africa/Lusaka] PHP Warning:  include(): Failed opening 'forum/?page=forum/index.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[29-Dec-2016 20:27:06 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[29-Dec-2016 20:27:06 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[29-Dec-2016 20:27:06 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[09-Jan-2017 14:06:15 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[09-Jan-2017 14:06:15 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[09-Jan-2017 14:06:15 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[09-Jan-2017 19:45:28 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[09-Jan-2017 19:45:28 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[09-Jan-2017 19:45:28 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 12:51:01 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 12:51:01 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 12:51:01 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 14:38:20 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 14:38:20 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 14:38:20 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 14:38:55 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 14:38:55 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 14:38:55 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 15:03:24 Africa/Lusaka] PHP Fatal error:  Call to undefined function password_verify() in /home/agoracode/public_html/login.php on line 15
+[10-Jan-2017 15:08:13 Africa/Lusaka] PHP Warning:  include(signin.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[10-Jan-2017 15:08:13 Africa/Lusaka] PHP Warning:  include(): Failed opening 'signin.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[11-Jan-2017 07:55:37 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[11-Jan-2017 07:55:37 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[12-Jan-2017 13:50:42 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[12-Jan-2017 13:50:42 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[12-Jan-2017 18:48:45 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[12-Jan-2017 18:48:45 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[13-Jan-2017 17:18:40 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[13-Jan-2017 17:18:40 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 01:39:10 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 01:39:10 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 01:39:14 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 01:39:14 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[14-Jan-2017 01:39:28 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:00 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:01 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:01 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[14-Jan-2017 19:10:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[14-Jan-2017 19:10:03 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[15-Jan-2017 09:52:29 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[15-Jan-2017 09:52:29 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[15-Jan-2017 09:52:45 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[15-Jan-2017 09:52:45 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[15-Jan-2017 09:52:49 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[15-Jan-2017 09:52:49 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[15-Jan-2017 22:33:32 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[15-Jan-2017 22:33:32 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[15-Jan-2017 22:33:54 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[15-Jan-2017 22:33:54 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[15-Jan-2017 22:34:23 Africa/Lusaka] PHP Warning:  include(events.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 88
+[15-Jan-2017 22:34:23 Africa/Lusaka] PHP Warning:  include(): Failed opening 'events.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 88
+[17-Jan-2017 01:59:16 Africa/Lusaka] PHP Warning:  include(legal/legal.php): failed to open stream: No such file or directory in /home/agoracode/public_html/frontpage.php on line 89
+[17-Jan-2017 01:59:16 Africa/Lusaka] PHP Warning:  include(): Failed opening 'legal/legal.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/frontpage.php on line 89
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[19-Jan-2017 15:00:56 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[19-Jan-2017 15:00:58 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[22-Jan-2017 09:25:02 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[26-Jan-2017 06:45:22 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[26-Jan-2017 06:45:22 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[31-Jan-2017 16:58:14 Africa/Lusaka] PHP Warning:  include(title.php): failed to open stream: No such file or directory in /home/agoracode/public_html/forum/newtopic.php on line 2
+[31-Jan-2017 16:58:14 Africa/Lusaka] PHP Warning:  include(): Failed opening 'title.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/forum/newtopic.php on line 2
+[31-Jan-2017 16:58:14 Africa/Lusaka] PHP Warning:  include(admin/var.php): failed to open stream: No such file or directory in /home/agoracode/public_html/forum/newtopic.php on line 3
+[31-Jan-2017 16:58:14 Africa/Lusaka] PHP Warning:  include(): Failed opening 'admin/var.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/agoracode/public_html/forum/newtopic.php on line 3
+[31-Jan-2017 16:58:14 Africa/Lusaka] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/agoracode/public_html/forum/newtopic.php:18
+Stack trace:
+#0 /home/agoracode/public_html/frontpage.php(89): include()
+#1 /home/agoracode/public_html/index.php(139): include('/home/agoracode...')
+#2 {main}
+  thrown in /home/agoracode/public_html/forum/newtopic.php on line 18
+[01-Feb-2017 17:32:09 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[01-Feb-2017 17:32:09 Africa/Lusaka] PHP Notice:  Undefined variable: getusertime3 in /home/agoracode/public_html/forum/index.php on line 492
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[01-Feb-2017 17:32:10 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 335
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 358
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/agoracode/public_html/forum/index.php on line 368
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 380
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/agoracode/public_html/forum/index.php on line 426
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 427
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 428
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 430
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 448
+[01-Feb-2017 17:32:11 Africa/Lusaka] PHP Notice:  Undefined variable: numtopicsperpage in /home/agoracode/public_html/forum/index.php on line 451

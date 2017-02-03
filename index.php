@@ -132,10 +132,8 @@ $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPe
     <script src="js/jquery.min.js"></script>
 
 </head>
-<!--<a class="btn btn-default" href="blog.html" data-target="#bjax-target" data-el="#content .row" data-bjax="">Load Page Element</a>-->
-<!--<a href="index.html" data-bjax class="btn btn-default">Load Page</a>-->
-<body>
-<section href="" data-target="" data-bjax>
+
+<body class="">
 <?php
 if (isset($_SESSION['member']) || isset($_GET['page']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')):
     include "frontpage.php";
@@ -144,7 +142,6 @@ else:
     include"landing.php";
 endif;
 ?>
-</section>
 
 
 
@@ -337,5 +334,4 @@ if(!isset($_GET['page']) && !isset($_SESSION['member']) && !isset($_SESSION['sta
 
 
 </body>
-
 </html>
