@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "testing"
-AuthUserFile "/home/agoracode/.htpasswds/public_html/testing/passwd"
-require valid-user

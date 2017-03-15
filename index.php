@@ -86,252 +86,261 @@ if(isset($_SESSION['member'])){
 
 $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPermissions));
 
-?><!DOCTYPE html>
-<html lang="en"><head>
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <title>Agora Code Community | Lusaka, Zambia</title>
-    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
+    <title>Agora Code Community</title>
 
-    <!-- Styles -->
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="icon" type="image/gif" href="favicon.png" />
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.css" rel="stylesheet">
 
-    <?php
-    if(!isset($_GET['page']) && !isset($_SESSION['member']) && !isset($_SESSION['status'])){
-        ?>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-        <script src="js/modernizr-2.7.1.js"></script>
-    <?php
-    }else{
-    ?>
-    <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
-    <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
-    <link rel="stylesheet" href="css/font.css" type="text/css" />
-    <link rel="stylesheet" href="css/app.css" type="text/css" />
-    <link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css" />
-    <link rel="stylesheet" href="js/slider/slider.css" type="text/css" />
-    <link rel="stylesheet" href="js/chosen/chosen.css" type="text/css" />
-    <link rel="stylesheet" href="js/datatables/datatables.css" type="text/css"/>
-        <?php
-    }
-    ?>
-
-    <script src="js/jquery.min.js"></script>
+	<link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
 
 </head>
 
-<body class="">
-<?php
-if (isset($_SESSION['member']) || isset($_GET['page']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')):
-    include "frontpage.php";
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
 
-else:
-    include"landing.php";
-endif;
-?>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./">
+                <img data-u="image" src="img/_agora_logo.png"/>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./">Home</a></li>
+                    <li><a href="?page=about">About</a></li>
+                    <!--<li><a href="?page=events">Events</a></li>-->
+                    <li><a href="?page=jobs">Jobs</a></li>
+                    <li><a href="?page=community">Community</a></li>
+                    <?php if(isset($_SESSION['member']) || (isset($_SESSION['status']) && $_SESSION['status'] == 'verified')){
+                        $user=$_SESSION['member'];
+                        $getuser="SELECT * from account where account_id='$user'";
+                        $getuser2=mysqli_query($dbconn,$getuser) or die("Could not get user info");
+                        $getuser3=mysqli_fetch_array($getuser2);
+                        $username = $getuser3['username'];
+                        $fullname = $getuser3['first_name'].' '.$getuser3['last_name'];
+                        $regDate = $getuser3['created'];
+
+                        $email = $getuser3['email'];
+
+                        $oldDate = new DateTime($regDate);
+
+                        $curDate = mktime(Date('H'),Date('i'),Date('s'),Date('m'),Date('d'),Date('Y'));
+                        $curDate = new DateTime(date('Y-m-d H:i:s', $curDate));
+
+                        $difference = $oldDate->diff($curDate);
+
+                        $timePassed = $difference->y.' years, '.$difference->m.' months, '.$difference->d.' days';
+                        ?>
+                        <li>
+                            <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
+                                <i class="icon-user"></i>
+                                Hi <?php echo $username; ?> <b class="caret"></b>
+                            </a>
+                            <section class="dropdown-menu aside-xl animated fadeInUp">
+                                <section class="panel bg-white">
+                                    <div class="panel-heading b-light bg-light">
+                                        <strong><i class="icon-user"></i> Your Account</strong>
+                                    </div>
+                                    <div class="m-lg">
+                                        <p><b>CUSTOMER: &emsp;&emsp;</b><?php echo $fullname; ?><br/>
+                                            <b>USERNAME: &emsp;&emsp;</b><?php echo $username; ?><br/>
+                                            <b>SUPPORT PIN: &emsp;&emsp;</b><?php echo ""; ?></p>
+
+                                        <hr/>
+
+                                        <a style="color: gray;" href="?page=dashboard&username=<?php echo $user; ?>">Dashboard</a><br/>
+                                        <a style="color: gray;" href="?page=profile/personal_info">Profile</a><br/>
+                                        <a style="color: gray;" href="?logout"><i class="fa fa-sign-out"></i> Logout</a><br/>
+
+                                    </div>
+                                </section>
+                            </section>
+                        </li>
+                        <li><a href="?logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+                        <?php
+                    }else{
+                        ?>
+                        <li><a href="#modal-form" data-toggle="modal">Sign in</a></li>
+                        <?php
+                    }
+                    ?>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Selected Tab content -->
+    <section>
+        <section>
+            <div>
+                <?php
+                if(isset($_GET['page'])) //looking at a page
+                {
+                    $page = $_GET['page'];
+                    include"$page.php";
+                }else //looking at main index
+                {
+                    include "landing.php";
+                }
+                ?>
+            </div>
+        </section>
+    </section>
+    <!--/. Selected Tab content -->
+    </body>
 
 
-
-<!-- Javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-
-<!--Sign in dialog-->
-<div class="modal fade" id="modal-form">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body wrapper-lg">
-                <div class="row">
-                    <div class="col-sm-6 b-r">
-                        <h3 class="m-t-none m-b">Sign in</h3>
-                        <p>Sign in to meet your friends.</p>
-                        <form action='index.php' role="form" method="post">
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type='email' name='email' class="form-control" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" placeholder="Password" name='password' value=''>
-                            </div>
-                            <div class="checkbox m-t-lg">
-                                <button type="submit" name='login' class="btn btn-sm btn-success pull-right text-uc m-t-n-xs"><strong>Log in</strong></button>
-                                <label>
-                                    <input type="checkbox"> Remember me
-                                </label>
-                            </div>
-                        </form>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="wow shake" data-wow-delay="0.4s">
+					<div class="page-scroll marginbot-30">
+						<a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+					</div>
+					</div>
+                    <!--<p>&copy;SquadFREE. All rights reserved.</p>-->
+                    <div class="credits">
+                        <!-- 
+                            All the links in the footer should remain intact. 
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+                        -->
                     </div>
-                    <div class="col-sm-6">
-                        <h4>Not a member?</h4>
-                        <p>You can create an account <a href="?page=member&signup" class="text-info">here</a></p>
-                        <p>OR</p>
-                        <a href="<?php echo $loginUrl; ?>" class="btn btn-primary btn-block m-b-sm"><i class="fa fa-facebook pull-left"></i>Sign in with Facebook</a>
-                        <a href="process.php" class="btn btn-info btn-block m-b-sm"><i class="fa fa-twitter pull-left"></i>Sign in with Twitter</a>
-                        <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google-plus pull-left"></i>Sign in with Google+</a>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="vendors/Flot/jquery.flot.js"></script>
+    <script src="vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="vendors/Flot/jquery.flot.time.js"></script>
+    <script src="vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.js"></script>
+
+    <!--Sign in dialog-->
+    <div class="modal fade" id="modal-form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body wrapper-lg">
+                    <div class="row">
+                        <div class="col-sm-6 b-r">
+                            <h3 class="m-t-none m-b">Sign in</h3>
+                            <p>Sign in to meet your friends.</p>
+                            <form action='index.php' role="form" method="post">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type='email' name='email' class="form-control" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" name='password' value=''>
+                                </div>
+                                <div class="checkbox m-t-lg">
+                                    <button type="submit" name='login' class="btn btn-sm btn-success pull-right text-uc m-t-n-xs"><strong>Log in</strong></button>
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>Not a member?</h4>
+                            <p>You can create an account <a href="?page=member&signup" class="text-info">here</a></p>
+                            <p>OR</p>
+                            <a href="<?php echo $loginUrl; ?>" class="btn btn-primary btn-block m-b-sm"><i class="fa fa-facebook pull-left"></i>Sign in with Facebook</a>
+                            <a href="process.php" class="btn btn-info btn-block m-b-sm"><i class="fa fa-twitter pull-left"></i>Sign in with Twitter</a>
+                            <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google-plus pull-left"></i>Sign in with Google+</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-<!--Sign in dialog-->
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!--Sign in dialog-->
 
-<!--ticket dialog-->
-<div class="modal fade" id="modal-form-2">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body wrapper-lg">
-                <div class="row">
-                    <div class="container-fluid" style="width:100%; text-align:left;">
-                        <iframe src="//eventbrite.com/tickets-external?eid=29684227323&ref=etckt" frameborder="0" height="275" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-<!--ticket dialog-->
-
-<!-- Bootstrap -->
-<script src="js/bootstrap.js"></script>
-<?php
-if(!isset($_GET['page']) && !isset($_SESSION['member']) && !isset($_SESSION['status'])){
-    ?>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-<?php
-}else{
-?>
-
-    <!-- App -->
-    <script src="js/app.js"></script>
-    <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- parsley -->
-    <script src="js/parsley/parsley.min.js"></script>
-    <script src="js/parsley/parsley.extend.js"></script>
-
-    <!-- datepicker -->
-    <script src="js/datepicker/bootstrap-datepicker.js"></script>
-    <!-- slider -->
-    <script src="js/slider/bootstrap-slider.js"></script>
-    <!-- file input -->
-    <script src="js/file-input/bootstrap-filestyle.min.js"></script>
-    <!-- wysiwyg -->
-    <script src="js/wysiwyg/jquery.hotkeys.js"></script>
-    <script src="js/wysiwyg/bootstrap-wysiwyg.js"></script>
-    <script src="js/wysiwyg/demo.js"></script>
-    <!-- markdown -->
-    <script src="js/markdown/epiceditor.min.js"></script>
-    <script src="js/markdown/demo.js"></script>
-
-    <script src="js/chosen/chosen.jquery.min.js"></script>
-    <script src="js/app.plugin.js"></script>
-    <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-    <script type="text/javascript" src="js/jPlayer/demo.js"></script>
-    <?php
-}
-?>
-
-
-
-
-<script type="text/javascript">
-    $("input[type=password]").keyup(function(){
-        var ucase = new RegExp("[A-Z]+");
-        var lcase = new RegExp("[a-z]+");
-        var num = new RegExp("[0-9]+");
-        var spchar = new RegExp("[@#$%]+");
-
-        if($("#password1").val().length >= 8){
-            $("#8char").removeClass("fa-times");
-            $("#8char").addClass("fa-check");
-            $("#8char").css("color","#00A41E");
-        }else{
-            $("#8char").removeClass("fa-check");
-            $("#8char").addClass("fa-times");
-            $("#8char").css("color","#FF0004");
-        }
-
-        if(ucase.test($("#password1").val())){
-            $("#ucase").removeClass("fa-times");
-            $("#ucase").addClass("fa-check");
-            $("#ucase").css("color","#00A41E");
-        }else{
-            $("#ucase").removeClass("fa-check");
-            $("#ucase").addClass("fa-times");
-            $("#ucase").css("color","#FF0004");
-        }
-
-        if(spchar.test($("#password1").val())){
-            $("#spchar").removeClass("fa-times");
-            $("#spchar").addClass("fa-check");
-            $("#spchar").css("color","#00A41E");
-        }else{
-            $("#spchar").removeClass("fa-check");
-            $("#spchar").addClass("fa-times");
-            $("#spchar").css("color","#FF0004");
-        }
-
-        if(lcase.test($("#password1").val())){
-            $("#lcase").removeClass("fa-times");
-            $("#lcase").addClass("fa-check");
-            $("#lcase").css("color","#00A41E");
-        }else{
-            $("#lcase").removeClass("fa-check");
-            $("#lcase").addClass("fa-times");
-            $("#lcase").css("color","#FF0004");
-        }
-
-        if(num.test($("#password1").val())){
-            $("#num").removeClass("fa-times");
-            $("#num").addClass("fa-check");
-            $("#num").css("color","#00A41E");
-        }else{
-            $("#num").removeClass("fa-check");
-            $("#num").addClass("fa-times");
-            $("#num").css("color","#FF0004");
-        }
-
-        if($("#password1").val() == $("#password2").val()){
-            $("#pwmatch").removeClass("fa-times");
-            $("#pwmatch").addClass("fa-check");
-            $("#pwmatch").css("color","#00A41E");
-        }else{
-            $("#pwmatch").removeClass("fa-check");
-            $("#pwmatch").addClass("fa-times");
-            $("#pwmatch").css("color","#FF0004");
-        }
-    });
-</script>
-<script src="js/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.js"></script>
-<!-- App -->
-<script src="js/app.js"></script>
-<script src="js/slimscroll/jquery.slimscroll.min.js"></script>
-<script src="js/app.plugin.js"></script>
-<script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-<script type="text/javascript" src="js/jPlayer/demo.js"></script>
-
-
-</body>
 </html>
