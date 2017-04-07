@@ -49,7 +49,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 style="text-align: center">Find a job</h2>
+                <h2 style="text-align: center">Create job Ad</h2>
             </div>
         </div>
     </div><!-- /.container -->
@@ -57,21 +57,49 @@
 
 <div class="container">
     <section class="section">
-        <div class="col-md-8">
-            <div class="form-group">
-                <form role="form" action="" method="">
+        <div class="col-md-10">
+            <form role="form" action="" method="">
+                <div class="form-group col-md-5">
                     <div class="input-field">
-                        <input type="text" class="form-control" placeholder="Your Name" name="name">
+                        <input type="text" class="form-control" placeholder="Company name" name="company">
                     </div>
+                </div>
+                <div class="form-group col-md-5">
                     <div class="input-field">
-                        <input type="email" class="form-control" placeholder="Email Address" name="email">
+                        <input type="text" class="form-control" placeholder="Job title" name="jobTitle">
                     </div>
+                </div>
+                <div class="form-group col-md-5">
                     <div class="input-field">
-                        <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
+                        <input type="date" class="form-control" placeholder="Deadline Date" name="deadline">
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="form-group col-md-5">
+                    <div class="input-field">
+                        <input type="email" class="form-control" placeholder="Application Email" name="email">
+                    </div>
+                </div>
+                <div class="form-group col-md-10">
+                    <div class="input-field">
+                        <input type="text" class="form-control" placeholder="Application url" name="url">
+                    </div>
+                </div>
+                <div class="form-group col-md-10">
+                    <div class="input-field">
+                        <textarea class="form-control" placeholder="Job description" rows="3" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="form-group col-md-10">
+                    <div class="input-field">
+                        <textarea class="form-control" placeholder="Qualifications" rows="3" name="qualifications"></textarea>
+                    </div>
+                </div>
+                <div class="form-group col-md-5 col-md-offset-4">
+                    <button type="reset" class="btn btn-lg btn-default">Clear</button>
+                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                </div>
 
+            </form>
         </div>
 
     </section>
