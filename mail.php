@@ -1,4 +1,5 @@
 <?php
+session_start();
 
     $to = "webquery@agoracode.community";
     $name = $_POST["user_name"];
@@ -29,3 +30,7 @@
                     </html>
                ";
     mail($to,$subject,$message, $headers);
+
+    //Set the session variable
+    $_SESSION['success'] = "Message Sent Succesfully";
+    header("location: http://testing.agoracode.community/#contact");

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html class="no-js" xmlns:display="http://www.w3.org/1999/xhtml">
 
@@ -203,11 +206,8 @@
                     <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
                     	<div class="form-group">
 
-<<<<<<< HEAD
                     	    <form name="User_query" action="mail.php" method="POST">
-=======
-                    	    <form name="User_query" action="/mail.php" method="POST" onSubmit="return formValidation()">
->>>>>>> 1ad5230acb719df0e72f6366b61e948b23232644
+
                     	        <div class="input-field">
                     	            <input type="text" class="form-control" placeholder="Your Name" name="user_name">
                     	        </div>
@@ -224,15 +224,20 @@
                     	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
                     	        </div>
 
-                    	        <button class="btn btn-send" type="submit">Send me</button>
+                    	        <button class="btn btn-send" type="submit">Send</button>
                     	    </form>
+                            <?php
+                            if (isset($_SESSION['success']))
+                            {
+                                echo '<div class="alert alert-success alert-dismissible" role="alert">'
+                                    . '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
+                                    . '<span aria-hidden="true">&times;</span></button>'
+                                    . 'Message sent successfully'
+                                    . '</div>';
+                                unset($_SESSION['success']);
+                            }
+                            ?>
 
-                    	    <!--<div id="success">
-                    	        <p>Your Message was sent successfully</p>
-                    	    </div>
-                    	    <div id="error">
-                    	        <p>Your Message was not sent successfully</p>
-                    	    </div>-->
                     	</div>
                     </div>
                 </div>
@@ -286,116 +291,6 @@
         <script src="js/plugins.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/main.js"></script>
-
-        <!--Custom Scripts-->
-
-        <script>
-            //declare variables
-            var mesg;
-
-            // Get the modal
-            var modal = document.getElementById('myModal');
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-
-            function formValidation()
-            {
-                var unm = document.User_query.user_name;
-                var uem = document.User_query.email;
-                var utx = document.User_query.message;
-
-                if(name_validation(unm))
-                {
-                    if(email_validation_l(uem))
-                    {
-                        if(email_validation_s(uem))
-                        {
-                            if(text_validation(utx))
-                            {
-                               // display_modal();
-                            }
-                        }
-                    }
-                }
-                else{
-                    return false;
-                }
-            }
-
-            function name_validation(unm)
-            {
-                var uid_len = unm.value.length;
-                if (uid_len === 0)
-                {
-                    mesg = "PLease enter your name";
-                    display_modal();
-                    alert("PLease enter your name");
-                    unm.focus();
-                    return false;
-                }
-                return true;
-            }
-
-            function email_validation_l(uem)
-            {
-                var uem_len = uem.value.length;
-                if (uem_len === 0)
-                {
-                    alert("You almost forgot to put in your email.");
-                    uem.focus();
-                    return false;
-                }
-                return true;
-            }
-
-            function email_validation_s(uem)
-            {
-                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                if(uem.value.match(mailformat))
-                {
-                    return true;
-                }
-                else
-                {
-                    alert("That email dose not look right just go through it again");
-                    return false;
-                }
-            }
-
-            //method
-            function text_validation(utx)
-            {
-                var utx_len = utx.value.length;
-                if (utx_len === 0)
-                {
-                    alert(" Hey there.. Message box is still empty");
-                    utx.focus();
-                    return false;
-                }
-                return true;
-            }
-
-            //method to display the model
-            function display_modal() {
-                modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            }
-
-
-        </script>
 
 
     </body>
