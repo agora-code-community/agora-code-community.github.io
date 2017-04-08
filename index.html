@@ -99,18 +99,18 @@
             <div class="container">
                 <div class="row">
                     <div class="heading wow fadeInUp">
-                        <h2>Why we do it?</h2>
-                        <p>Well because dev is awesome!
-                            <br> We love dev and working with people who feel the same. </p>
+                        <h2>Who Are We?</h2>
+                        <p>Agora Code Community’s mission is to grow the community of developers across Africa.
+                            <br>To breed a better industry through diversity in developers and development.</p>
                     </div>
                     <div class="col-sm-6 col-md-3 wow fadeInLeft">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_puzzle_img.png" width="22.5%" height="22.5%">
+                                <img src="images/opti_puzzle_img.png" width="17.5%" height="17.5%">
                             </div>
                             <div class="caption">
                                 <h3>Problem Solving</h3>
-                                <p>Share your issues programing issues and lets debug that bug!.lol <br> Every code issues is a chance to learn!!</p>
+                                <p>Share your programing ideas and issues, and we'll help streamline those ideas and solve those problems. Every code issues is a chance to learn, and coders never stops learning!</p>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                             </div>
                             <div class="caption">
                             	<h3>Training</h3>
-                                <p>Need Training? we can guide you.. <br>We also looking into mini training sessions from local industry experts!</p>
+                                <p>Need Training? Don't worry, we've got you. We provide training sessions by IT personnel and communication volunteers, teaching coding, programming and computing.</p>
                             </div>
                         </div>
                     </div>
@@ -132,18 +132,18 @@
                             </div>
                             <div class="caption">
                                 <h3>Outreach</h3>
-                                <p>dont know what to put in here hope you guys can help me out</p>
+                                 <p>We tour schools and community centers to spread our love of code. We provide resources to enable the realization of ideas and technological advancements.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_globe_img.png" width="22.5%" height="22.5%">
+                                <img src="images/opti_globe_img.png" width="17%" height="17%">
                             </div>
                             <div class="caption">
                                 <h3>Community</h3>
-                                <p>We have such an amazing community with lots of crazy brilliant people<br>What you waiting for?? Sign up!!</p>
+                                <p>Our community breeds an enabling environment for freelance developers to get together, share ideas, resources and opportunities for jobs and networking.</p>
                             </div>
                         </div>
                     </div>
@@ -203,13 +203,17 @@
                     <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
                     	<div class="form-group">
 
+<<<<<<< HEAD
                     	    <form name="User_query" action="mail.php" method="POST">
+=======
+                    	    <form name="User_query" action="/mail.php" method="POST" onSubmit="return formValidation()">
+>>>>>>> 1ad5230acb719df0e72f6366b61e948b23232644
                     	        <div class="input-field">
-                    	            <input type="text" class="form-control" required="true" placeholder="Your Name" name="user_name">
+                    	            <input type="text" class="form-control" placeholder="Your Name" name="user_name">
                     	        </div>
 
                     	        <div class="input-field">
-                    	            <input type="email" class="form-control" required="true" placeholder="Email Address" data-required="true" name="email">
+                    	            <input type="email" class="form-control" placeholder="Email Address" data-required="true" name="email">
                     	        </div>
 
                                 <div class="input-field">
@@ -217,12 +221,18 @@
                                 </div>
 
                     	        <div class="input-field">
-                    	            <textarea class="form-control" required="true" placeholder="Your Message" rows="3" name="message"></textarea>
+                    	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
                     	        </div>
 
                     	        <button class="btn btn-send" type="submit">Send me</button>
                     	    </form>
 
+                    	    <!--<div id="success">
+                    	        <p>Your Message was sent successfully</p>
+                    	    </div>
+                    	    <div id="error">
+                    	        <p>Your Message was not sent successfully</p>
+                    	    </div>-->
                     	</div>
                     </div>
                 </div>
@@ -276,6 +286,117 @@
         <script src="js/plugins.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/main.js"></script>
+
+        <!--Custom Scripts-->
+
+        <script>
+            //declare variables
+            var mesg;
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+
+            function formValidation()
+            {
+                var unm = document.User_query.user_name;
+                var uem = document.User_query.email;
+                var utx = document.User_query.message;
+
+                if(name_validation(unm))
+                {
+                    if(email_validation_l(uem))
+                    {
+                        if(email_validation_s(uem))
+                        {
+                            if(text_validation(utx))
+                            {
+                               // display_modal();
+                            }
+                        }
+                    }
+                }
+                else{
+                    return false;
+                }
+            }
+
+            function name_validation(unm)
+            {
+                var uid_len = unm.value.length;
+                if (uid_len === 0)
+                {
+                    mesg = "PLease enter your name";
+                    display_modal();
+                    alert("PLease enter your name");
+                    unm.focus();
+                    return false;
+                }
+                return true;
+            }
+
+            function email_validation_l(uem)
+            {
+                var uem_len = uem.value.length;
+                if (uem_len === 0)
+                {
+                    alert("You almost forgot to put in your email.");
+                    uem.focus();
+                    return false;
+                }
+                return true;
+            }
+
+            function email_validation_s(uem)
+            {
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(uem.value.match(mailformat))
+                {
+                    return true;
+                }
+                else
+                {
+                    alert("That email dose not look right just go through it again");
+                    return false;
+                }
+            }
+
+            //method
+            function text_validation(utx)
+            {
+                var utx_len = utx.value.length;
+                if (utx_len === 0)
+                {
+                    alert(" Hey there.. Message box is still empty");
+                    utx.focus();
+                    return false;
+                }
+                return true;
+            }
+
+            //method to display the model
+            function display_modal() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+
+        </script>
+
 
     </body>
 </html>
