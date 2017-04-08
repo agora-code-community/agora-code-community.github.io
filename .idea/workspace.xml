@@ -28,9 +28,23 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="271" column="45" lean-forward="true" selection-start-line="271" selection-start-column="45" selection-end-line="271" selection-end-column="45" />
+            <state relative-caret-position="3655">
+              <caret line="215" column="127" lean-forward="false" selection-start-line="215" selection-start-column="127" selection-end-line="215" selection-end-column="127" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding>
+                <marker date="1491661611807" expanded="true" signature="379:974" ph="..." />
+                <marker date="1491661611807" expanded="true" signature="410:495" ph="..." />
+                <marker date="1491661611807" expanded="true" signature="526:946" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,12 +54,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/mail.php" />
       </list>
     </option>
   </component>
@@ -198,12 +216,12 @@
       <workItem from="1491274581515" duration="10820000" />
       <workItem from="1491294459938" duration="2536000" />
       <workItem from="1491298315266" duration="9867000" />
-      <workItem from="1491654641548" duration="1165000" />
+      <workItem from="1491654641548" duration="7594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24388000" />
+    <option name="totallyTimeSpent" value="30817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="775" extended-state="0" />
@@ -213,6 +231,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -276,6 +295,13 @@
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/css/responsive.css" />
     <entry file="file://$PROJECT_DIR$/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/license.txt" />
+    <entry file="file://$PROJECT_DIR$/images/Optimized-agora_logo_new.png" />
+    <entry file="file://$PROJECT_DIR$/images/about/3.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/about/2.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/about/1.jpg" />
+    <entry file="file://$PROJECT_DIR$/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/css/responsive.css" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -287,18 +313,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mail.php" />
-    <entry file="file://$PROJECT_DIR$/license.txt" />
-    <entry file="file://$PROJECT_DIR$/images/Optimized-agora_logo_new.png" />
-    <entry file="file://$PROJECT_DIR$/images/about/3.jpg" />
-    <entry file="file://$PROJECT_DIR$/images/about/2.jpg" />
-    <entry file="file://$PROJECT_DIR$/images/about/1.jpg" />
-    <entry file="file://$PROJECT_DIR$/css/main.css" />
-    <entry file="file://$PROJECT_DIR$/css/responsive.css" />
+    <entry file="file://$PROJECT_DIR$/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <marker date="1491661611807" expanded="true" signature="379:974" ph="..." />
+            <marker date="1491661611807" expanded="true" signature="410:495" ph="..." />
+            <marker date="1491661611807" expanded="true" signature="526:946" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="271" column="45" lean-forward="true" selection-start-line="271" selection-start-column="45" selection-end-line="271" selection-end-column="45" />
+        <state relative-caret-position="3655">
+          <caret line="215" column="127" lean-forward="false" selection-start-line="215" selection-start-column="127" selection-end-line="215" selection-end-column="127" />
           <folding />
         </state>
       </provider>

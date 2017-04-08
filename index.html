@@ -203,7 +203,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
                     	<div class="form-group">
 
-                    	    <form name="User_query" action="/mail.php" method="POST">
+                    	    <form name="User_query" action="mail.php" method="POST">
                     	        <div class="input-field">
                     	            <input type="text" class="form-control" required="true" placeholder="Your Name" name="user_name">
                     	        </div>
@@ -211,6 +211,10 @@
                     	        <div class="input-field">
                     	            <input type="email" class="form-control" required="true" placeholder="Email Address" data-required="true" name="email">
                     	        </div>
+
+                                <div class="input-field">
+                                    <input type="text" class="form-control" required="true" placeholder="Subject" name="subject">
+                                </div>
 
                     	        <div class="input-field">
                     	            <textarea class="form-control" required="true" placeholder="Your Message" rows="3" name="message"></textarea>
