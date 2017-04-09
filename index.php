@@ -79,7 +79,7 @@ session_start();
 	                <div class="">
 	                    <div class="block custom">
 	                        <a class="">
-                                <img src="images/opti_logo_full.png">
+                                <img src="images/opti_agora_logo_new_c.png">
                             </a>
 	                    </div>
 	                </div>
@@ -109,7 +109,7 @@ session_start();
                     <div class="col-sm-6 col-md-3 wow fadeInLeft">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_puzzle_img.png" width="17.5%" height="17.5%">
+                                <img src="images/opti_puzzle_img.png" width=22.5%" height=22.5%">
                             </div>
                             <div class="caption">
                                 <h3>Problem Solving</h3>
@@ -120,7 +120,7 @@ session_start();
                     <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_news_paper_img.png" width="22.5%" height="22.5%">
+                                <img src="images/opti_training.png" width="22.5%" height="22.5%">
                             </div>
                             <div class="caption">
                             	<h3>Training</h3>
@@ -142,7 +142,7 @@ session_start();
                     <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_globe_img.png" width="17%" height="17%">
+                                <img src="images/opti_globe.png" width=22.5%" height=22.5%">
                             </div>
                             <div class="caption">
                                 <h3>Community</h3>
@@ -163,7 +163,7 @@ session_start();
                             <!--<p>We still new at this but we will try to keep you updated. And we definitely wont spam you</p>-->
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Enter Your Email Address">
-                                <button class="btn btn-default btn-submit" type="submit">Get Notified</button>
+                                <button class="btn btn-submit btn-hover" type="submit">Get Notified</button>
                             </div>
                         </div>
                     </div>
@@ -195,8 +195,8 @@ session_start();
                                 <hr>
 								<p>Agora Code Community,<br> Great East Road 5777A,<br> Lusaka </p>
                                 <hr>
-                                <p><strong>Email:</strong>&nbsp;buddy@agoracode.community<br>
-                                <strong>Phone:</strong>&nbsp;+260 3948 2726</p>
+                                <p><strong>Email:</strong>&nbsp;info@agoracode.community<br>
+                                <strong>Phone:</strong>&nbsp;+260 97 871-599</p>
 								
                                 
 							</address>
@@ -224,7 +224,7 @@ session_start();
                     	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
                     	        </div>
 
-                    	        <button class="btn btn-send" type="submit">Send</button>
+                    	        <button class="btn btn-send btn-hover" type="submit">Send</button>
                     	    </form>
                             <?php
                             if (isset($_SESSION['success']))
