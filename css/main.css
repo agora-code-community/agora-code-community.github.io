@@ -574,7 +574,7 @@ a:active {
     position: relative;
     top: 75px;
     width: 100px;
-    height: 1px;;
+    height: 0px;;
     margin: 0 auto;
     background-color: #cbcbcd;
     -webkit-transition: all 0.2s ease-in;
@@ -872,6 +872,16 @@ footer p a:hover {
 
 /*image scale*/
 .custom img {
+    max-width: 30%;
+    max-height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/*image scale in hero-area*/
+.customhero img {
     max-width: 70%;
     max-height: 70%;
     display: block;

@@ -77,7 +77,7 @@ session_start();
 	        <div class="container">
 	            <div class="row">
 	                <div class="">
-	                    <div class="block custom">
+	                    <div class="block customhero">
 	                        <a class="">
                                 <img src="images/opti_agora_logo_new_c.png">
                             </a>
@@ -85,7 +85,7 @@ session_start();
 	                </div>
 	            </div><!-- .row close -->
                 <div>
-                    <div class="block custom">
+                    <div class="block customhero">
                         <a class="">
                             <img src="images/color_bar.png">
                         </a>
@@ -109,44 +109,44 @@ session_start();
                     <div class="col-sm-6 col-md-3 wow fadeInLeft">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_puzzle_img.png" width=22.5%" height=22.5%">
+                                <img src="images/opti_puzzle_img.png">
                             </div>
-                            <div class="caption">
-                                <h3>Problem Solving</h3>
-                                <p>Share your programing ideas and issues, and we'll help streamline those ideas and solve those problems. Every code issues is a chance to learn, and coders never stops learning!</p>
+                            <div class="caption" >
+                                <h3>Hack</h3>
+                                <p align="center">Share your programing ideas and issues, and we'll help streamline those ideas and solve those problems. Every coding issue is a chance to learn, and we never stops learning!</p><br>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_training.png" width="22.5%" height="22.5%">
+                                <img src="images/opti_training.png">
                             </div>
                             <div class="caption">
                             	<h3>Training</h3>
-                                <p>Need Training? Don't worry, we've got you. We provide training sessions by IT personnel and communication volunteers, teaching coding, programming and computing.</p>
+                                <p align="center">Need Training? Don't worry, we've got you. We provide training sessions by IT personnel and communication volunteers, teaching coding, programming and computing.</p><br>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_handshake_img.png" width="22.5%" height="22.5%">
+                                <img src="images/opti_handshake_img.png">
                             </div>
                             <div class="caption">
                                 <h3>Outreach</h3>
-                                 <p>We tour schools and community centers to spread our love of code. We provide resources to enable the realization of ideas and technological advancements.</p>
+                                 <p align="center">We tour schools and community centers to spread our love of code. We provide resources to enable the realization of ideas and technological advancements.</p><br>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="service">
                             <div class="icon-box custom">
-                                <img src="images/opti_globe.png" width=22.5%" height=22.5%">
+                                <img src="images/opti_globe.png">
                             </div>
                             <div class="caption">
                                 <h3>Community</h3>
-                                <p>Our community breeds an enabling environment for freelance developers to get together, share ideas, resources and opportunities for jobs and networking.</p>
+                                <p align="center">Our community breeds an enabling environment for freelance developers to get together, share ideas, resources and opportunities for jobs and networking.</p><br>
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@ session_start();
 								<p>Agora Code Community,<br> Great East Road 5777A,<br> Lusaka </p>
                                 <hr>
                                 <p><strong>Email:</strong>&nbsp;info@agoracode.community<br>
-                                <strong>Phone:</strong>&nbsp;+260 97 871-599</p>
+                                <strong>Phone:</strong>&nbsp;+260 97 8715997</p>
 								
                                 
 							</address>
