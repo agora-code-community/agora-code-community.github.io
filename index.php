@@ -213,7 +213,7 @@ session_start();
 							</div>
 							<address class="address">
                                 <hr>
-								<p>Agora Code Community,<br> Great East Road 5777A,<br> Lusaka </p>
+                                <p>Agora Code Community<br>Global Platform Zambia, <br> Great East Road 5777A,<br> Lusaka, Zambia.</br></p>
                                 <hr>
                                 <p><strong>Email:</strong>&nbsp;info@agoracode.community<br>
                                 <strong>Phone:</strong>&nbsp;+260 97 8715997</p>

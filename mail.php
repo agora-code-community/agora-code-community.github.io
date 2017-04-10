@@ -33,4 +33,4 @@ session_start();
 
     //Set the session variable
     $_SESSION['success'] = "Message Sent Succesfully";
-    header("location: http://testing.agoracode.community/#contact");
+    header("location: http://agoracode.community/#contact");
