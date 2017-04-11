@@ -7,9 +7,6 @@ $results = mysqli_query($dbconn, $query) or die(mysqli_error($dbconn));
 
 ?>
 
-<!-- job page custom css -->
-<link rel="stylesheet" href="css/jobportal.css">
-
 <!-- some fancy banner to beautify the page -->
 <div class="banner">
   <div class="container">
@@ -80,15 +77,6 @@ $results = mysqli_query($dbconn, $query) or die(mysqli_error($dbconn));
               </tr>
               </thead>
               <tbody>
-
-              <tr>
-                  <td>Africonnect Zambia LTD</td>
-                  <td>Software Developer</td>
-                  <td>Lusaka</td>
-                  <td>Full-time</td>
-                  <td>2 days ago</td>
-                  <td><a class="btn btn-dark btn-rounded" href="?page=job-posting">View Details</i></a></td>
-              </tr>
               <?php
               while ($row = mysqli_fetch_assoc($results)){
                   $id = $row['id'];

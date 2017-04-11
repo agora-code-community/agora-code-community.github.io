@@ -80,14 +80,13 @@ while ($row = mysqli_fetch_assoc($results)){
         <hr>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <h3>Job details</h3>
                 <div class="text-right">
                     <a href="?page=jobs" class="btn btn-success">
                         <i class="fa fa-arrow-left"></i>Go Back
                     </a>
                 </div>
                 <div class="heading wow fadeInUp">
-                    <h2><?php echo $company;?></h2>
+                    <h2><?php echo $company;?> <br><small>Job details</small></h2>
                     <h4><strong>Job title:</strong> <?php echo $jobTitle;?></h4>
                 </div>
 

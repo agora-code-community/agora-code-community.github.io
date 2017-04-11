@@ -1,17 +1,36 @@
 <?php
-    $to = "morshed08@gmail.com";
-    $from = $_REQUEST['name'];
-    $headers = "Content-type: text/html;From: $from";
+session_start();
 
-    $fields = array();
-    $fields["name"] = $_REQUEST['name'];
-    $fields["email"] = $_REQUEST['email'];
-    $fields["message"] = $_REQUEST['message'];
+    $to = "webquery@agoracode.community";
+    $name = $_POST["user_name"];
+    $email = $_POST["email"];
+    $text = $_POST["message"];
+    $subject = $_POST["subject"];
 
-    $body = "Here is what was sent:\n\n";
-    $body .= 'Name : '.$fields['name']. '<br>';
-    $body .= 'Email : '.$fields['email']. '<br>';
-    $body .= 'Message : '.$fields['message']. '<br>';
+    $headers =  'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'From: '.$name . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-    $send = mail($to, $body, $headers);
+    $message = "
+                   <html>
+                        <head>
+                           <title>HTML email</title>
+                        </head>
+                        <body>
+                        <br>
+                            <p><strong>Name</strong></p>
+                            <p>$name</p>
+                        <br>
+                            <p><strong>Email</strong></p>
+                            <p>$email</p>
+                        <br>    
+                            <p><strong>Query</strong></p>
+                            <p>$text</p>
+                        </body>
+                    </html>
+               ";
+    mail($to,$subject,$message, $headers);
 
+    //Set the session variable
+    $_SESSION['success'] = "Message Sent Succesfully";
+    header("location: http://agoracode.community/#contact");
