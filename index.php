@@ -1,10 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Chingaipe
- * Date: 4/7/2017
- * Time: 10:18 AM
- */
+ob_start();
+include_once 'configuration.php';
+$http_referrer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;
 ?>
 
 <!DOCTYPE html>
@@ -35,6 +32,8 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- Responsive Stylesheet -->
         <link rel="stylesheet" href="css/responsive.css">
+        <!-- bootstrap wysihtml5 - text editor -->
+        <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     </head>
 
     <body id="body">
@@ -119,6 +118,8 @@
     <script src="js/plugins.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 
     </body>
 </html>

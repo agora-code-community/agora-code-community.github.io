@@ -1,3 +1,12 @@
+<?php
+
+//retrieving the jobs
+$query = "SELECT * FROM jobs WHERE 1 = 1";
+//run query
+$results = mysqli_query($dbconn, $query) or die(mysqli_error($dbconn));
+
+?>
+
 <!-- job page custom css -->
 <link rel="stylesheet" href="css/jobportal.css">
 
@@ -80,6 +89,22 @@
                   <td>2 days ago</td>
                   <td><a class="btn btn-dark btn-rounded" href="?page=job-posting">View Details</i></a></td>
               </tr>
+              <?php
+              while ($row = mysqli_fetch_assoc($results)){
+                  $id = $row['id'];
+                  ?>
+                  <tr>
+                      <td><?php echo $row['company'];?></td>
+                      <td><?php echo $row['jobtitle'];?></td>
+                      <td><?php echo $row['location'];?></td>
+                      <td><?php echo $row['jobtype'];?></td>
+                      <td><?php echo date("F j, Y", strtotime($row['deadline']));?></td>
+                      <td><a class="btn btn-dark btn-rounded" href="?page=job-posting&id=<?php echo $id;?>">View Details</i></a></td>
+                  </tr>
+              <?php
+              } //end while
+              ?>
+
               </tbody>
           </table>
 

@@ -1,4 +1,25 @@
+<?php
+// getting id from url
+if (!isset($_GET['id']) && empty($_GET['id'])){
+    header("Location: $http_referrer");
+}else{
+    $id = $_GET['id'];
+}
+// retrieving specific records
+$query = "SELECT * FROM jobs WHERE id='$id'";
+// run query
+$results = mysqli_query($dbconn, $query) or die(mysqli_error($dbconn));
 
+while ($row = mysqli_fetch_assoc($results)){
+    $company = $row['company'];
+    $jobTitle = $row['jobtitle'];
+    $jobtype = $row['jobtype'];
+    $deadline = $row['deadline'];
+    $description = $row['description'];
+    $qualification = $row['qualifications'];
+    $appEmail = $row['app_email'];
+}
+?>
 <!-- Internal css -->
 <link rel="stylesheet" href="css/jobportal.css" xmlns="http://www.w3.org/1999/html">
 
@@ -7,7 +28,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 style="text-align: center">Company name</h2>
+                <h2 style="text-align: center"><?php echo $company;?><br><small>Job Advert</small></h2>
             </div>
         </div>
     </div><!-- /.container -->
@@ -59,32 +80,33 @@
         <hr>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
+                <h3>Job details</h3>
+                <div class="text-right">
+                    <a href="?page=jobs" class="btn btn-success">
+                        <i class="fa fa-arrow-left"></i>Go Back
+                    </a>
+                </div>
                 <div class="heading wow fadeInUp">
-                    <h2>Africonnect Zambia LTD</h2>
-                    <h4><strong>Job title:</strong> Software Developer</h4>
+                    <h2><?php echo $company;?></h2>
+                    <h4><strong>Job title:</strong> <?php echo $jobTitle;?></h4>
                 </div>
 
                 <div class="block sub-heading">
                     <h3>Description</h3>
-                    <p>Engage, moon! Countless understandings will be lost in assimilations like plasmas in winds. I
-                        raise this tragedy, it's called reliable love. Ships experiment from minerals like modern
-                        admirals. Astronauts fly with mystery at the delighted parallel universe! Sensor, turbulence,
-                        and mystery.
-                    </p>
+                    <p><?php echo $description;?></p>
                 </div>
                 <div class="block sub-heading">
                     <h3>Qualifications/Requirements</h3>
-                    <p>Boreass velum, tanquam grandis extum. Hibrida fortis poeta est. Germanus, fidelis byssuss
-                        virtualiter manifestum de placidus, varius bursa. Ventuss experimentum in placidus tubinga!
-                    </p>
+                    <p><?php echo $qualification;?> </p>
                 </div>
                 <div class="text-right">
-                    <a href="mailto:hr@africonnect.co.zm?subject=Job Application - Software Developer"
+                    <a href="mailto:<?php echo $appEmail;?>"
                        class="btn btn-success">Apply for this job</a>
-                    <p class="help-block">Or email: hr@africonnect.co.zm</p>
+                    <p class="help-block">Or email: <?php echo $appEmail; ?></p>
                 </div>
             </div>
         </div> <!-- end row -->
+        <!-- this row is to display related jobs -->
 
     </div>
 
