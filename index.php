@@ -180,11 +180,12 @@ session_start();
                     <div class="col-md-12 wow text-center">
                         <div class="block">
                             <h2>Sign to our Newsletter</h2>
-                            <!--<p>We still new at this but we will try to keep you updated. And we definitely wont spam you</p>-->
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Email Address">
-                                <button class="btn btn-submit btn-hover" type="submit">Get Notified</button>
-                            </div>
+                            <form action="subscribe.php" method="post" data-validate="parsley" id="subscribe" role="form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control"  id="email" name="email" placeholder="Enter Your Email Address">
+                                    <button class="btn btn-submit btn-hover" type="submit" id="Submit">Get Notified</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
