@@ -184,6 +184,17 @@ session_start();
                                 <div class="form-group">
                                     <input type="email" class="form-control"  id="email" name="email" placeholder="Enter Your Email Address">
                                     <button class="btn btn-submit btn-hover" type="submit" id="Submit">Get Notified</button>
+                                    <?php
+                                    if (isset($_SESSION['success']))
+                                    {
+                                        echo '<div class="alert alert-success alert-dismissible" role="alert">'
+                                            . '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
+                                            . '<span aria-hidden="true">&times;</span></button>'
+                                            . 'Subscription Successfull'
+                                            . '</div>';
+                                        unset($_SESSION['success']);
+                                    }
+                                    ?>
                                 </div>
                             </form>
                         </div>

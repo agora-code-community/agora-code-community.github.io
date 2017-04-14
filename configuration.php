@@ -1,7 +1,7 @@
 <?php
 
 //Connect databse
-$dbconn = mysqli_connect('localhost','root','','agora');
+$dbconn = mysqli_connect('localhost','agoracod_agora','{Rw&@8sTtNWX','agoracod_agora');
 if(!$dbconn){
     echo "error connecting to database";
 }
