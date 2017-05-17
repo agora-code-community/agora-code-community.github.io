@@ -123,6 +123,11 @@ px      68    160    252    */
         width: 50%;
     }
 
+    .navbar-default .navbar-brand img {
+        height: 9vh;
+        width: auto;
+    }
+
 
     #banner-area {
         padding-top: 40px;

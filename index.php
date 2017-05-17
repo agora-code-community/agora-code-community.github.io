@@ -79,8 +79,8 @@ session_start();
 	                    <span class="icon-bar"></span>
 	                </button>
 	                <a class="navbar-brand" href="#">
-                        <img class="logo-1" src="images/Optimized-agora_logo_new.png" alt="LOGO">
-	                    <img class="logo-2" src="images/Optimized-agora_logo_new.png" alt="LOGO">
+                        <img class="logo-1" src="images/agora_logo_new.png" alt="LOGO">
+	                    <img class="logo-2" src="images/agora_logo_new.png" alt="LOGO">
 	                </a>
 	            </div>
 
