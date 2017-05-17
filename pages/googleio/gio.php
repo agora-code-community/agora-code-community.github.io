@@ -30,7 +30,6 @@ include "../../configuration.php";
                 <div style="position:relative;height:0;padding-bottom:56.25%" align="center">
                     <iframe src="https://events.google.com/io/embed" style="width:1050px;height:540px" frameborder="0" allowfullscreen></iframe>
                 </div>
-            <br>
         </div>
 
     </div><!-- /.container -->
