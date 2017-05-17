@@ -90,7 +90,7 @@ About start
             <div class="col-md-12 wow text-center">
                 <div class="block">
                     <h2>Sign to our Newsletter</h2>
-                    <form action="subscribe.php" method="post" data-validate="parsley" id="subscribe" role="form">
+                    <form action="../../subscribe.php" method="post" data-validate="parsley" id="subscribe" role="form">
                         <div class="form-group">
                             <input type="email" class="form-control"  id="email" name="email" placeholder="Enter Your Email Address">
                             <button class="btn btn-submit btn-hover" type="submit" id="Submit">Get Notified</button>
@@ -148,7 +148,7 @@ Contact start
             <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="form-group">
 
-                    <form name="User_query" action="mail.php" method="POST">
+                    <form name="User_query" action="../../mail.php" method="POST">
 
                         <div class="input-field">
                             <input type="text" class="form-control" placeholder="Your Name" name="user_name">

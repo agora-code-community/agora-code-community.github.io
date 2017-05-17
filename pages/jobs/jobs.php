@@ -1,11 +1,14 @@
 <?php
-include "configuration.php";
+include "../../configuration.php";
 //retrieving the jobs
 $query = "SELECT * FROM jobs WHERE 1 = 1";
 //run query
 $results = mysqli_query($dbconn, $query) or die(mysqli_error($dbconn));
 
 ?>
+
+<!-- job page custom css -->
+<link rel="stylesheet" href="css/jobportal.css">
 
 <!-- ====== Jobs page content ====== -->
 

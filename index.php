@@ -48,10 +48,10 @@ session_start();
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
-        <!-- job page custom css -->
-        <link rel="stylesheet" href="css/jobportal.css">
+
         <!-- Responsive Stylesheet -->
         <link rel="stylesheet" href="css/responsive.css">
+        <!--google io custom css-->
 
     </head>
 
@@ -87,10 +87,12 @@ session_start();
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <nav class="collapse navbar-collapse" id="navbar">
 	                <ul class="nav navbar-nav navbar-right" id="top-nav">
-                        <li><a href="javascript:ajaxpage('landing.php');">Home</a></li>
-                        <li><a href="javascript:ajaxpage('landing.php')">About us</a></li>
-                        <li><a href="javascript:ajaxpage('jobs.php');">Jobs</a></li>
-                        <li><a href="javascript:ajaxpage('404.html');">Sign in</a></li>
+                        <li><a href="javascript:ajaxpage('pages/landing/landing.php');">Home</a></li>
+                        <!--<li><a href="javascript:ajaxpage('pages/landing/landing.php#about')">About us</a></li>-->
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="javascript:ajaxpage('pages/googleio/gio.php')">Google I/O</a></li>
+                        <!--<li><a href="javascript:ajaxpage('pages/jobs/jobs.php');">Jobs</a></li>--> <!--uncomment to add jobs tab-->
+                        <!--<li><a href="javascript:ajaxpage('404.html');">Sign in</a></li>--> <!--uncomment to add sign in tab-->
                     </ul>
 	            </nav><!-- /.navbar-collapse -->
 	        </div><!-- /.container-fluid -->
@@ -100,7 +102,7 @@ session_start();
 	        <div id="body-content">
                 <!-- All other pages plugin here -->
                 <?php
-                include"landing.php";
+                include "pages/landing/landing.php";
                 ?>
                 <!--end of All other pages plugin-->
             </div>
@@ -140,14 +142,11 @@ session_start();
                 var containerid = "body-content";   //container id
                 $.get(url, function(response) {
                     $('#'+containerid).fadeOut('fast', function() {  //fade out previous content
-                        $('#'+containerid).html($.trim(response)).fadeIn('fast');     //get new content and fade it in
+                        $('#'+containerid).html($.trim(response)).fadeIn('fast').scrollTop('fast');     //get new content and fade it in
                     });
                 });
 
                 //*uncomment  the code below to have the page auto scroll up when loaded*
-                /* $('html, body').animate({
-                 scrollTop: 5
-                 } , 'fast');*/
             }
 
         </script>

@@ -25,7 +25,7 @@
       echo '<div class="alert alert-success">
             <button type="button" class="close" data-dismiss="alert">x</button>
             <strong>Well done!</strong> Your job Ad has been posted successfully.
-            Go here to <a style="color: blue;" href="index.php?page=jobs">Jobs page</a>.
+            Go here to <a style="color: blue;" href="../index.php?page=jobs">jobs page</a>.
           </div>';
     }else {
       # if fields are empty, shows error alert

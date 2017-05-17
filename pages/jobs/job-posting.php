@@ -22,7 +22,7 @@ while ($row = mysqli_fetch_assoc($results)){
 }
 ?>
 <!-- Internal css -->
-<link rel="stylesheet" href="css/jobportal.css" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="../css/jobportal.css" xmlns="http://www.w3.org/1999/html">
 
 <!-- some fancy banner to beautify the page -->
 <div class="banner2">
@@ -82,7 +82,7 @@ while ($row = mysqli_fetch_assoc($results)){
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="text-right">
-                    <a href="javascript:ajaxpage('jobs.php')" class="btn btn-success">
+                    <a href="javascript:ajaxpage('jobs.php');" class="btn btn-success">
                         <i class="fa fa-arrow-left"></i>Go Back
                     </a>
                 </div>

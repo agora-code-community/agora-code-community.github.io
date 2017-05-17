@@ -1,5 +1,5 @@
 <?php
-require_once ('configuration.php');
+require_once('configuration.php');
 $email   = trim($_REQUEST['email']);
 $err     = "";
 $nheaders = "From: " . SUBSCRIBER_FROM_NAME . " <" . $email . ">\r\nReply-To: " . $email . "";
