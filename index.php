@@ -112,7 +112,7 @@ session_start();
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <p>Copyright &copy; <a href="http://agoracode.community">Agora Code Community</a>| All right reserved.</p>
+                            <p>Copyright &copy; <a href="http://agoracode.community">Agora Code Community</a> | All right reserved.</p>
                         </div>
                     </div>
                 </div>
