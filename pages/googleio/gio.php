@@ -32,6 +32,14 @@ include "../../configuration.php";
                 </div>
             <br>
         </div>
+
+        <div class="container-fluid">
+            <script src="https://app.dialogfeed.com/wc/bower_components/webcomponentsjs/webcomponents-lite.min.js">
+
+            </script>  <link rel="import" href="https://app.dialogfeed.com/wc/elements/dialogfeed-wall.html">
+            <dialogfeed-wall slug='google-i-o' width="" env='production_page'></dialogfeed-wall>
+            <!--<a style="text-indent: -9999px; position: absolute; bottom: 50px; right: 20px; z-index: -1; display:inline-block;" href="http://www.dialogfeed.com/"></a>-->
+        </div>
     </div><!-- /.container -->
 </div>
 
