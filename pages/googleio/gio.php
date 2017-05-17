@@ -27,10 +27,9 @@ include "../../configuration.php";
     <div class="container">
         <div>
             <br>
-            <div style="position:relative;height:0;padding-bottom:56.25%">
-                <iframe src="https://www.youtube.com/embed/tcwxskN7n-o?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen>
-                </iframe>
-            </div>
+                <div style="position:relative;height:0;padding-bottom:56.25%">
+                    <iframe src="https://www.youtube.com/embed/Y2VF8tmLFHw?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+                </div>
             <br>
         </div>
     </div><!-- /.container -->
