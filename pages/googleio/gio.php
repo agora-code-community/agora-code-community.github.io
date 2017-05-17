@@ -12,13 +12,12 @@ include "../../configuration.php";
         <div class="container">
             <div class="row">
                 <div class="margintop ">
-                    <div class="wow fadeInLeft">
+                    <div class="wow fadeInLeft hiden" >
                         <h1>Lets watch:</h1>
                     </div>
                     <div class="block custombanner wow fadeInUp">
-
                         <a class="">
-                            <img src="pages/googleio/images/google_io_banner.png">
+                            <img src="pages/googleio/images/google_io_banner.png" >
                         </a>
                     </div>
                 </div>
