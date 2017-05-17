@@ -27,19 +27,12 @@ include "../../configuration.php";
     <div class="container">
         <div>
             <br>
-                <div style="position:relative;height:0;padding-bottom:56.25%">
-                    <iframe src="https://www.youtube.com/embed/Y2VF8tmLFHw?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+                <div style="position:relative;height:0;padding-bottom:56.25%" align="center">
+                    <iframe src="https://events.google.com/io/embed" style="width:1050px;height:540px" frameborder="0" allowfullscreen></iframe>
                 </div>
             <br>
         </div>
 
-        <div class="container-fluid">
-            <script src="https://app.dialogfeed.com/wc/bower_components/webcomponentsjs/webcomponents-lite.min.js">
-
-            </script>  <link rel="import" href="https://app.dialogfeed.com/wc/elements/dialogfeed-wall.html">
-            <dialogfeed-wall slug='google-i-o' width="" env='production_page'></dialogfeed-wall>
-            <!--<a style="text-indent: -9999px; position: absolute; bottom: 50px; right: 20px; z-index: -1; display:inline-block;" href="http://www.dialogfeed.com/"></a>-->
-        </div>
     </div><!-- /.container -->
 </div>
 
