@@ -56,7 +56,7 @@ session_start();
     </head>
 
     <body id="body">
-
+	<?php include_once("analyticstracking.php") ?>
     	<div id="preloader">
     		<div class="book">
     		  <div class="book__page"></div>
