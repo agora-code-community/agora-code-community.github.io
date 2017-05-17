@@ -12,10 +12,8 @@ include "../../configuration.php";
         <div class="container">
             <div class="row">
                 <div class="margintop ">
-                    <div class="wow fadeInLeft hiden" >
-                        <h1>Lets watch:</h1>
-                    </div>
-                    <div class="block custombanner wow fadeInUp">
+                    
+                    <div class="block custombanner wow fadeInUp" align="center">
                         <a class="">
                             <img src="pages/googleio/images/google_io_banner.png" >
                         </a>
@@ -33,7 +31,8 @@ include "../../configuration.php";
                 <iframe src="https://www.youtube.com/embed/tcwxskN7n-o?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen>
                 </iframe>
             </div>
+            <br>
         </div>
-    </div>--><!-- /.container
+    </div><!-- /.container -->
 </div>
 
