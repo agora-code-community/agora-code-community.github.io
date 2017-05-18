@@ -42,7 +42,7 @@ About start
                     </div>
                     <div class="caption" >
                         <h3>Hack</h3>
-                        <p align="center">Share your programing ideas and issues, and we'll help streamline those ideas and solve those problems. Every coding issue is a chance to learn, and we never stops learning!</p><br>
+                        <p align="center">Share your programing ideas and issues, and we'll help streamline those ideas and solve those problems. Every coding issue is a chance to learn, and we never stops learning!</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ About start
                     </div>
                     <div class="caption">
                         <h3>Training</h3>
-                        <p align="center">Need Training? Don't worry, we've got you. We provide training sessions by IT personnel and communication volunteers, teaching coding, programming and computing.</p><br>
+                        <p align="center">Need Training? Don't worry, we've got you. We provide training sessions by IT personnel and communication volunteers, teaching coding, programming and computing.</p>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ About start
                     </div>
                     <div class="caption">
                         <h3>Outreach</h3>
-                        <p align="center">We tour schools and community centers to spread our love of code. We provide resources to enable the realization of ideas and technological advancements.</p><br>
+                        <p align="center">We tour schools and community centers to spread our love of code. We provide resources to enable the realization of ideas and technological advancements.</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ About start
                     </div>
                     <div class="caption">
                         <h3>Community</h3>
-                        <p align="center">Our community breeds an enabling environment for freelance developers to get together, share ideas, resources and opportunities for jobs and networking.</p><br>
+                        <p align="center">Our community breeds an enabling environment for freelance developers to get together, share ideas, resources and opportunities for jobs and networking.</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,6 @@ Google I/O start
 <section id="about" class="section">
     <div class="container">
         <div class="row wow fadeInLeft" align="center">
-
                 <h2 align="center">Watch Google's I/O Livestream</h2>
                 <br>
                 <a href="javascript:ajaxpage('pages/googleio/gio.php')"><img src="pages/googleio/images/io_button.png" width="250"></a>
@@ -160,7 +159,7 @@ Contact start
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInRight" data-wow-delay="0.3s">
                 <div class="form-group">
 
                     <form name="User_query" action="../../mail.php" method="POST">
