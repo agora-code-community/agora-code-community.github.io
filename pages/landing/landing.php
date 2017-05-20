@@ -90,7 +90,7 @@ Google I/O start
 <section id="about" class="section">
     <div class="container">
         <div class="row wow fadeInLeft" align="center">
-                <h2 align="center">Watch Google's I/O Livestream</h2>
+                <h2 align="center">Watch Google's I/O Recap</h2>
                 <br>
                 <a href="javascript:ajaxpage('pages/googleio/gio.php')"><img src="pages/googleio/images/io_button.png" width="250"></a>
         </div>
