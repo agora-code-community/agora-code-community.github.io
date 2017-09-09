@@ -89,7 +89,7 @@ session_start();
 	                <ul class="nav navbar-nav navbar-right" id="top-nav">
                         <li><a href="javascript:ajaxpage('pages/landing/landing.php');">Home</a></li>
                         <!--<li><a href="javascript:ajaxpage('pages/landing/landing.php#about')">About us</a></li>-->
-                        <li><a href="#about">About us</a></li>
+                        <li><a href="javascript:ajaxpage('pages/about-us/about-us.php')">About us</a></li>
                         <li><a href="javascript:ajaxpage('pages/googleio/gio.php')"><img src="pages/googleio/images/io_button.png" width="26px"> Recap</a></li>
                         <!--<li><a href="javascript:ajaxpage('pages/jobs/jobs.php');">Jobs</a></li>--> <!--uncomment to add jobs tab-->
                         <!--<li><a href="javascript:ajaxpage('404.html');">Sign in</a></li>--> <!--uncomment to add sign in tab-->
