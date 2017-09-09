@@ -1,6 +1,13 @@
 <?php
 ?>
 
+<!--======= Import Custom Page CSS ====== -->
+
+ <link rel="stylesheet" href="pages/about-us/css/slider.css">
+ <link rel="stylesheet" href="pages/about-us/css/custom-heading.css">
+
+ <!--======= End Import  ====== -->
+
 <!-- ====== Landing page content ====== -->
 
 <section id="hero-area">
@@ -32,62 +39,165 @@ About start
         <div class="row">
             <div class="heading wow fadeInUp">
                 <h2>who are we?</h2>
-                <p>Agora Code Community’s mission is to grow the community of developers across Africa.
-                    <br>To breed a better industry through diversity in developers and development.</p>
+                <p>Agora Code Community’s mission is to grow the community of developers across Africa.</p>
+                <p>To breed a better industry through diversity in developers and development.</p>
+                <p>Agora Code Community’s mission is to grow the community of developers across Africa.</p>
+                <p>To breed a better industry through diversity in developers and development.</p>
+                <p>Agora Code Community’s mission is to grow the community of developers across Africa.</p>
+                <p>To breed a better industry through diversity in developers and development.</p>
+                <p>Agora Code Community’s mission is to grow the community of developers across Africa.</p>
+                <p>To breed a better industry through diversity in developers and development.</p>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="heading wow fadeInUp">
+            <div class="custom-heading wow fadeInUp">
                 <h2>The team behind it all</h2>
             </div>
         </div>
-    </div><!-- .container close -->
-</section><!-- #service close -->
-
-
-<!--
-Google I/O start
-==================== -->
-<section id="about" class="section">
-    <div class="container">
-        <div class="row wow fadeInLeft" align="center">
-                <h2 align="center">Watch Google's I/O Recap</h2>
-                <br>
-                <a href="javascript:ajaxpage('pages/googleio/gio.php')"><img src="pages/googleio/images/io_button.png" width="250"></a>
-        </div>
-    </div><!-- .container close -->
-</section><!-- #service close -->
-
-
-<section id="call-to-action" class="section">
-    <div class="container">
         <div class="row">
-            <div class="col-md-12 wow text-center">
-                <div class="block">
-                    <h2>Sign to our Newsletter</h2>
-                    <form action="../../subscribe.php" method="post" data-validate="parsley" id="subscribe" role="form">
-                        <div class="form-group">
-                            <input type="email" class="form-control"  id="email" name="email" placeholder="Enter Your Email Address">
-                            <button class="btn btn-submit btn-hover" type="submit" id="Submit">Get Notified</button>
-                            <?php
-                            if (isset($_SESSION['success']))
-                            {
-                                echo '<div class="alert alert-success alert-dismissible" role="alert">'
-                                    . '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
-                                    . '<span aria-hidden="true">&times;</span></button>'
-                                    . 'Subscription Successfull'
-                                    . '</div>';
-                                unset($_SESSION['success']);
-                            }
-                            ?>
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                    </ol>
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <br>
+                                <br>
+                                    <div class="row">
+                                        <h2>Full Name</h2>
+                                        <h2>Organizational Role</h2>
+                                    </div>
+                                    <div class="row">
+                                        <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <a class="btn btn-social-icon btn-twitter">
+                                            <span class="fa fa-twitter"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-facebook">
+                                            <span class="fa fa-facebook"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-linkedin">
+                                            <span class="fa fa-linkedin"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-skype">
+                                            <span class="fa fa-skype"></span>
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="http://via.placeholder.com/300x300" class="img-rounded" alt="Name Here">
+                                </div>
+                            </div>
                         </div>
-                    </form>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <br>
+                                <br>
+                                    <div class="row">
+                                        <h2>Full Name</h2>
+                                        <h2>Organizational Role</h2>
+                                    </div>
+                                    <div class="row">
+                                        <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <a class="btn btn-social-icon btn-twitter">
+                                            <span class="fa fa-twitter"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-facebook">
+                                            <span class="fa fa-facebook"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-linkedin">
+                                            <span class="fa fa-linkedin"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-skype">
+                                            <span class="fa fa-skype"></span>
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="http://via.placeholder.com/300x300" class="img-rounded" alt="Name Here">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <br>
+                                <br>
+                                    <div class="row">
+                                        <h2>Full Name</h2>
+                                        <h2>Organizational Role</h2>
+                                    </div>
+                                    <div class="row">
+                                        <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <a class="btn btn-social-icon btn-twitter">
+                                            <span class="fa fa-twitter"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-facebook">
+                                            <span class="fa fa-facebook"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-linkedin">
+                                            <span class="fa fa-linkedin"></span>
+                                          </a>
+                                        
+                                            <a class="btn btn-social-icon btn-skype">
+                                            <span class="fa fa-skype"></span>
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="http://via.placeholder.com/300x300" class="img-rounded" alt="Name Here">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
-</section><!-- #call-to-action close -->
+        </div> <!-- #row close -->
+    </div> <!-- #container close -->
+</section><!-- #service close -->
 
 <!--
 Contact start
