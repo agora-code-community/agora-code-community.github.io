@@ -100,7 +100,7 @@ Timeline Section
                 <div class="col-sm-6">
                     <br>
                     <br>
-                    <img src="http://via.placeholder.com/350x350" class="img-rounded" alt="Name Here">
+                    <img src="http://via.placeholder.com/500x350" class="img-rounded" alt="Name Here">
                 </div>
             </div>
           </li>
