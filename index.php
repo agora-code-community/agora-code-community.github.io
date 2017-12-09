@@ -35,7 +35,7 @@ session_start();
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        
+
         <!-- Fonts -->
         <!-- Lato -->
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
@@ -48,6 +48,7 @@ session_start();
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="pages/landing/css/custom.css">
 
         <!-- Responsive Stylesheet -->
         <link rel="stylesheet" href="css/responsive.css">
@@ -65,7 +66,7 @@ session_start();
     		</div>
     	</div>
 
-	    <!-- 
+	    <!--
 	    Header start
 	    ==================== -->
 	    <div class="navbar-default navbar-fixed-top" id="navigation">
@@ -90,6 +91,7 @@ session_start();
                         <li><a href="javascript:ajaxpage('pages/landing/landing.php');">Home</a></li>
                         <li><a href="javascript:ajaxpage('pages/events/events.php')">Events</a></li>
                         <li><a href="javascript:ajaxpage('pages/about-us/about-us.php')">About us</a></li>
+                        <li><a href="#ggj"><img src="pages/ggj18/images/ggj_logo.png" width="26px"> GGJ18</a></li>
                         <!--<li><a href="javascript:ajaxpage('pages/jobs/jobs.php');">Jobs</a></li>--> <!--uncomment to add jobs tab-->
                         <!--<li><a href="javascript:ajaxpage('404.html');">Sign in</a></li>--> <!--uncomment to add sign in tab-->
                     </ul>
@@ -132,6 +134,7 @@ session_start();
         <script src="js/plugins.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="pages/landing/js/countdown.js"></script>
 
         <!--custom css-->
 
@@ -141,7 +144,7 @@ session_start();
                 var containerid = "body-content";   //container id
                 $.get(url, function(response) {
                     $('#'+containerid).fadeOut('fast', function() {  //fade out previous content
-                        $('#'+containerid).html($.trim(response)).fadeIn('fast').scrollTop('fast');     //get new content and fade it in
+                      $('#'+containerid).html($.trim(response)).fadeIn('fast').scrollTop('fast');     //get new content and fade it in
                     });
                 });
 

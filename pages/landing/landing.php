@@ -85,16 +85,51 @@ About start
 
 
 <!--
-Google I/O start
+GGJ 18 start
 ==================== -->
-<section id="about" class="section">
-    <div class="container">
-        <div class="row wow fadeInLeft" align="center">
-                <h2 align="center">Watch Google's I/O Recap</h2>
-                <br>
-                <a href="javascript:ajaxpage('pages/googleio/gio.php')"><img src="pages/googleio/images/io_button.png" width="250"></a>
+<section id="ggj" class="section">
+  <div class="container">
+    <div class="row wow fadeInLeft" align="center">
+      <div class="heading wow fadeInUp">
+        <h2 align="center">Countdown to <strong>GGJ 18 Lusaka <img src="pages/ggj18/images/ggj_logo.png" width="40px"></strong></h2>
+        <div class="row">
+          <h6 class="col-lg-12 text-center">Brought you by <strong>Agora Code Community</strong></h6>
         </div>
-    </div><!-- .container close -->
+      </div>
+      <div id="clockdiv" class="clock-body row">
+        <div class="col-lg-3 col-md-4 col-sm-6 circle">
+          <span class="days"></span>
+          <br>
+          <div class="smalltext">Days</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 circle">
+          <span class="hours"></span>
+          <br>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 circle">
+          <span class="minutes"></span>
+          <br>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 circle">
+          <span class="seconds"></span>
+          <br>
+          <div class="smalltext">Seconds</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div><!-- .container close -->
+  <div class="container">
+    <div class="row wow fadeInLeft" align="center">
+      <h2 align="center">Where do you sign up?</h2>
+      <p>To Sign Up Visit Our Profile On The Global Game Jam Website <a target="_blank" href="https://globalgamejam.org/2018/jam-sites/agora-code-community">Here</a></p>
+      <br>
+      <a href="https://globalgamejam.org/2018/jam-sites/agora-code-community"><img src="pages/ggj18/images/ggj_sticker.png" width="250"></a>
+    </div>
+  </div><!-- .container close -->
 </section><!-- #service close -->
 
 
@@ -159,8 +194,6 @@ Contact start
                 </div>
             </div>
 
-
-            <!--Happy Birthday Dude! Hope you had a good one...here's a metaphorical Nissan Skyline!-->
             <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInRight" data-wow-delay="0.3s">
                 <div class="form-group">
 
